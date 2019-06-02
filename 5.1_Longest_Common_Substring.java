@@ -23,7 +23,7 @@ public static int getLCSlen(String str1, String str2){
 
 	for(int i = 0; i < arr1.length; i++){
 		for(int j = 0; j < arr2.length; j++){
-			if(arr1[i] == arr2[i]){
+			if(arr1[i] == arr2[j]){
 				if(i > 0 && j > 0){
 					temp[i][j] = temp[i - 1][j - 1] + 1;
 				}
