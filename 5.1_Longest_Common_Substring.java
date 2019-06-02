@@ -19,7 +19,7 @@ public static int getLCSlen(String str1, String str2){
 	int maxLen = 0;
 	char[] arr1 = str1.toCharArray();
 	char[] arr2 = str2.toCharArray();
-	int[] temp = new int[arr1.length][arr2.length];
+	int[][] temp = new int[arr1.length][arr2.length];
 
 	for(int i = 0; i < arr1.length; i++){
 		for(int j = 0; j < arr2.length; j++){
