@@ -38,12 +38,18 @@
         for(int i = 1; i < T.length() - 1; i++){
             int i_mirror = 2 * C - i;
             if(R > i){
-               P[i] = Math.min(R - i, P[i_mirror]); 
+            /* 
+             * Since the C-centered palindrome substring is red 3, including substring 1 and substring 2, 
+             * and substring 1 and substring 2 are centered on C. 
+             * There must be substring 2 = substring 1. And it is known that substring 1 is the longest substring centered on j, 
+             * then substring 2 is definitely the longest substring centered on i.
+             */
+               P[i] = Math.min(R - i, P[i_mirror]);
             }else{
-                P[i] = 0; //if P[i] == R
+                P[i] = 0; //  if i == R
             }
             
-            while(T.charAt(i + P[i] + 1) == T.charAt(i - P[i] - 1)){
+            while(T.charAt(i + P[i] + 1) == T.charAt(i - P[i] - 1)){  //  Calculate largest P[i] for each i
                 P[i]++;
             }
             
@@ -51,7 +57,7 @@
              * In the iteration, it is always guaranteed that R is the rightmost position at 
              * the end of all the palindrome substrings that have been obtained.
              */
-            // Refresh R situation 
+            // Refresh R 
             if(P[i] + i > R){
                 C = i;
                 R = i + P[i];
