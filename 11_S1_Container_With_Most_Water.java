@@ -4,7 +4,8 @@
  * Target: The array subscript represents the abscissa, the value in the array represents the ordinate, and calculate the maximum area.
  * Difficulty：Medium
  * Classification：Array, Two Pointers
- * Algorithm: => Two loops, O(n)      
+ * Algorithm: => Two loops, Violent search
+ * Time Conplexity: O(n^2)    
  */
 
 class Solution {
