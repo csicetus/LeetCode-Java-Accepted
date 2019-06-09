@@ -5,6 +5,7 @@
  * Difficulty：Medium
  * Classification：Linked List, Two Pointers
  * Algorithm: => Traverse the list first to calculate the length, then find the point before n-th and change its' next point.
+ * Note: The first time traverse the list to determine the length, store each node in an array in passing. Time: O(n), Space: O(n).
  * Time complexity: O(n), Space complexity: O(1)
  */
 
