@@ -1,10 +1,10 @@
 /*
- * 21. Merge Two Sorted Lists solution 1
+ * 21. Merge Two Sorted Lists solution 2
  * 2019-06-10  Runtime: 0 ms
  * Target: Merge two sorted linked lists and return it as a new list.
  * Difficulty：Easy
  * Classification：Linked List
- * Algorithm: => Iteratively.
+ * Algorithm: => Recursion.
  * Time complexity: O(m + n), Space complexity: O(1)
  */
  
