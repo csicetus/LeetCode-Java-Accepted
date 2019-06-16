@@ -18,7 +18,7 @@
  * Solution 1
  * 2019-06-15  Runtime: 7 ms
  * Algorithm: => Brute Force.
- * Time complexity: O(N*logN). Space complexity: O(N).
+ * Time complexity: O(n*logn). Space complexity: O(n).
  */
 
 class Solution {
@@ -46,7 +46,7 @@ class Solution {
  * Solution 2
  * 2019-06-15  Runtime: 322 ms
  * Algorithm: => Compare one by one.
- * Time complexity: O(k*N). Space complexity: O(1).
+ * Time complexity: O(k*n). Space complexity: O(1).
  */
  
  class Solution {
@@ -88,7 +88,7 @@ class Solution {
  * Solution 3
  * 2019-06-15  Runtime: 5 ms
  * Algorithm: => Optimize solution 2 by Priority Queue.
- * Time complexity: O(N log(k)). Space complexity: O(k).
+ * Time complexity: O(nlog(k)). Space complexity: O(k).
  */
  
  class Solution {
@@ -128,7 +128,7 @@ class Solution {
  * Solution 4
  * 2019-06-15  Runtime: 302 ms
  * Algorithm: => Merge lists one by one.
- * Time complexity: O(k * N). Space complexity: O(1).
+ * Time complexity: O(k*n). Space complexity: O(1).
  */
 
 class Solution {
@@ -159,9 +159,38 @@ class Solution {
     }
 }
  
+
 /*
  * Solution 5
- * 2019-06-15  Runtime: 3 ms
- * Algorithm: => Recursion. The length of res is 2 * n.
- * Time complexity: O(N log(k)). Space complexity: O(k).
+ * 2019-06-16  Runtime: 2 ms
+ * Algorithm: => Merge with Divide And Conquer.
+ * Time complexity: O(nlog(k)). Space complexity: O(1).
  */
+
+class Solution {
+     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 != null && l2 != null){
+            if (l1.val > l2.val){
+                ListNode temp = l1;
+                l1 = l2;
+                l2 = temp;
+            }
+            l1.next = mergeTwoLists(l1.next, l2);
+        }
+        return (l1 != null) ? l1 : l2;
+    }
+    
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length == 0){
+            return null;
+        }
+        int point = 1;
+        while (point < lists.length){
+            for (int i = 0; i + point < lists.length; i = i + point * 2){
+                lists[i] = mergeTwoLists(lists[i], lists[i + point]);
+            }
+            point *= 2;
+        }
+        return lists[0];
+    }
+}
