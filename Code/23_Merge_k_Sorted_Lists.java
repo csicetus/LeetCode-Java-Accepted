@@ -126,14 +126,42 @@ class Solution {
  
 /*
  * Solution 4
- * 2019-06-15  Runtime: 3 ms
- * Algorithm: => Recursion. The length of res is 2 * n.
- * Note: res[0] => "(", res[1 : c - 1] => group a legal sequence, res[c] => ")", res[c + 1 : 2 * n - 1]: group b legal sequence
+ * 2019-06-15  Runtime: 302 ms
+ * Algorithm: => Merge lists one by one.
+ * Time complexity: O(k * N). Space complexity: O(1).
  */
+
+class Solution {
+     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 != null && l2 != null){
+            if (l1.val > l2.val){
+                ListNode temp = l1;
+                l1 = l2;
+                l2 = temp;
+            }
+            l1.next = mergeTwoLists(l1.next, l2);
+        }
+        return (l1 != null) ? l1 : l2;
+    }
+    
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length == 0){
+            return null;
+        }
+        if(lists.length == 1){
+            return lists[0];
+        }
+        ListNode head = mergeTwoLists(lists[0], lists[1]);
+        for (int i = 2; i < lists.length; i++){
+            head = mergeTwoLists(head, lists[i]);
+        }
+        return head;
+    }
+}
  
 /*
  * Solution 5
  * 2019-06-15  Runtime: 3 ms
  * Algorithm: => Recursion. The length of res is 2 * n.
- * Note: res[0] => "(", res[1 : c - 1] => group a legal sequence, res[c] => ")", res[c + 1 : 2 * n - 1]: group b legal sequence
+ * Time complexity: O(N log(k)). Space complexity: O(k).
  */
