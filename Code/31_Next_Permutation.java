@@ -10,37 +10,56 @@
  */
  
 class Solution {
-    public void nextPermutation(int[] nums) {
-        int i = nums.length - 2;
-        int j = i + 1;
-        if (j > 0) {
-            while (i >= 0 && nums[i] >= nums[i + 1] ) {
-                i--;
+    public int search(int[] nums, int target) {
+        int start = 0;
+        int n = nums.length;
+        int end = n - 1;
+        
+        // find min number index
+        while (start < end) {
+            int mid = Math.round((start + end) / 2);
+            System.out.print(mid);
+            if (nums[mid] > nums[end]) {
+                start = mid + 1;
             }
-            if (i < 0) {
-                reverse(nums, 0);
-                return;
+            else {
+                end = mid;
             }
-            while (j >= 0 && nums[j] <= nums[i]) {
-                j--;
-            }
-            swap(nums, i, j);
-            reverse(nums, i + 1);
         }
-    }
-    
-    public void swap(int[] nums, int s1, int s2) {
-        int temp = nums[s1];
-        nums[s1] = nums[s2];
-        nums[s2] = temp;
-    }
-    
-    public void reverse(int[] nums, int k) {
-        int m = k, n = nums.length - 1;
-        while (m < n) {
-            swap(nums, m, n);
-            m++;
-            n--;
-        }        
+        
+        // find max number index
+        // while (start < end) {
+        //     int mid = (start + end) / 2;
+        //     if (nums[mid] < nums[start]) {
+        //         end = mid + 1;
+        //     }
+        //     else {
+        //         start = mid;
+        //     }
+        // }
+        
+        
+        // (pos + bias) % n = index
+        // (n - 1 + bias) % n = start
+        int bias = (start + n) - (n - 1);
+        System.out.println(bias);
+        start = 0;
+        end = n - 1;
+        
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            int mid_index = (mid + bias) % n;
+            System.out.println(mid_index);
+            if (target == nums[mid_index]) {
+                return mid_index;
+            }
+            if (target > nums[mid_index]) {
+                start = mid + 1;
+            }
+            else {
+                end = mid - 1;
+            }
+        }
+        return -1;
     }
 }
