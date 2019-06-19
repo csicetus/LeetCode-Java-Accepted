@@ -8,7 +8,7 @@
  
  /*
  * Solution 1
- * 2019-06-17  Runtime: 0 ms
+ * 2019-06-18  Runtime: 0 ms
  * Algorithm: => Binary Search.
  * Time complexity: O(logn). Space complexity: O(1).
  */
@@ -53,6 +53,62 @@
         }     
         res[1] = end;
         
+        return res;
+    }
+}
+
+
+/*
+ * Solution 2
+ * 2019-06-18  Runtime: 0 ms
+ * Algorithm: => Optimize solution 1 by adding if when nums[mid] == target.
+ * Time complexity: O(logn). Space complexity: O(1).
+ */
+
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+        int[] res = { -1, -1 };
+        
+        if (nums.length == 0) {
+            return res;
+        }
+        
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] == target) {
+                int n = mid > 0 ? nums[mid - 1] : Integer.MIN_VALUE;
+                if (target > n || mid == 0) {
+                    res[0] = mid;
+                    break;
+                }
+                end = mid - 1;
+            }else if (nums[mid] < target) {
+                start = mid + 1;
+            }else {
+                end = mid - 1;
+            }
+        }
+
+        start = 0;
+        end = nums.length - 1;
+        
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] == target) {
+                int n = mid < nums.length - 1 ? nums[mid + 1] : Integer.MAX_VALUE;
+                if (target < n || mid == nums.length - 1) {
+                    res[1] = mid;
+                    break;
+                }
+                start = mid + 1;
+            }else if (nums[mid] < target) {
+                start = mid + 1;
+            }else {
+                end = mid - 1;
+            }
+        }             
         return res;
     }
 }
