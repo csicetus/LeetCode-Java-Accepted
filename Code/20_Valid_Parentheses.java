@@ -1,11 +1,15 @@
 /*
  * 20. Valid Parentheses
- * 2019-06-10  Runtime: 1 ms
  * Target: Valid Parentheses.
  * Difficulty：Easy
  * Classification：String, Stack
- * Algorithm: => Use stack
- * Time complexity: O(n), Space complexity: O(n)
+ */
+
+/*
+ * Solution 1
+ * 2019-06-10  Runtime: 1 ms
+ * Algorithm: => Use stack.
+ * Time complexity: O(n), Space complexity: O(n).
  */
 
 class Solution {
@@ -24,3 +28,22 @@ class Solution {
         return stack.empty();
     }
 }
+
+
+/*
+ * Solution 2
+ * 2019-06-10  Runtime: 83 ms
+ * Algorithm: => Replace from middle.
+ */
+
+class Solution {
+    public boolean isValid(String s) {
+         while (s.contains("{}") || s.contains("[]") || s.contains("()")){
+            if (s.contains("{}")) s = s.replace("{}", "");
+            if (s.contains("[]")) s = s.replace("[]", "");
+            if (s.contains("()")) s = s.replace("()", "");
+        }     
+        return s.isEmpty();
+    }
+}
+
