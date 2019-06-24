@@ -37,7 +37,7 @@
  * Solution 2
  * 2019-06-23  Runtime: 7 ms
  * Algorithm: => Arrange key as factors of prime numbers.
- * Time complexity: O(k*n). Space complexity: O(1).
+ * Time complexity: O(n*K). Space complexity: O(NK).
  * Note: The basic theorem of arithmeti => each natural number greater than 1, either itself is a prime number, 
  *       or can be written as a product of more than two prime numbers, and after these quality factors are arranged by size, 
  *       there is only one way to write.
