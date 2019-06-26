@@ -4,6 +4,7 @@
  *         ask if you can go from the beginning of the array to the end of the array.
  * Difficulty：Medium
  * Classification：Array, Greedy
+ * Best solution: solution 3.
  */
 
 /*
@@ -80,8 +81,20 @@ class Solution {
 
  
 /*
- * Solution 3
+ * Solution 3 BEST SOL!
  * 2019-06-25  Runtime: 1 ms
- * Algorithm: => Divide and Conquer.
- * Time complexity: O(n^2). Space complexity: O(n).
+ * Algorithm: => Greedy.
+ * Time complexity: O(n). Space complexity: O(1).
  */
+
+class Solution {
+    public boolean canJump(int[] nums) {
+        int lastPos = nums.length - 1;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (i + nums[i] >= lastPos) {
+                lastPos = i;
+            }
+        }
+        return lastPos == 0;
+    }
+}
