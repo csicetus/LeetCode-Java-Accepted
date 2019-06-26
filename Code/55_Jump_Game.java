@@ -49,14 +49,37 @@ class Solution {
 
 /*
  * Solution 2
- * 2019-06-25  Runtime: 1 ms
- * Algorithm: => Divide and Conquer.
+ * 2019-06-25  Runtime: 171 ms
+ * Algorithm: => DP Bottom-up.
  * Time complexity: O(n^2). Space complexity: O(n).
  */
  
+ enum Index {
+        GOOD, BAD, UNKNOWN
+}
+
+class Solution {
+    public boolean canJump(int[] nums) {
+        Index[] memo = new Index[nums.length];
+        for (int i = 0; i < memo.length; i++) {
+            memo[i] = Index.UNKNOWN;
+        }
+        memo[memo.length - 1] = Index.GOOD;
+        for (int i = memo.length - 2; i >= 0; i--) {
+            int furthestJump = Math.min(i + nums[i], memo.length - 1);
+            for (int j = i + 1; j <= furthestJump; j++) {
+                if (memo[j] == Index.GOOD) {
+                    memo[i] = Index.GOOD;
+                    break;
+                }
+            }
+        }
+        return memo[0] == Index.GOOD;
+    }
+}
+
  
- 
- /*
+/*
  * Solution 3
  * 2019-06-25  Runtime: 1 ms
  * Algorithm: => Divide and Conquer.
