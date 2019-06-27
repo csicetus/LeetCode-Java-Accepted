@@ -46,3 +46,51 @@
         return n1 + n2;
     }
 }
+
+
+
+/*
+ * Solution 2
+ * 2019-06-27  Runtime: 0 ms
+ * Algorithm: => Iteration.
+ * Time complexity: O(m*n) Space complexity: O(n)
+ */
+
+class Solution {
+    public int uniquePaths(int m, int n) {
+        int[] dp = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            dp[i] = 1;
+        }
+        
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[j] = dp[j] + dp[j - 1];
+            }
+        }
+        
+        return dp[n - 1];
+    }
+}
+
+
+/*
+ * Solution 3
+ * 2019-06-27  Runtime: 0 ms
+ * Algorithm: => Formulation. Unique Paths = the way to choose k numbers from N numbers, which is n!/((n - k)!*k!) = (n - k + i)!/k!.
+ * Time complexity: O(n) Space complexity: O(1)
+ */
+
+class Solution {
+    public int uniquePaths(int m, int n) {
+        long res = 1;
+        int k = m - 1;
+        int N = m + n - 2;        
+        
+        for (int i = 1; i <= k; i++) {
+            res = res * (N - k + i) / i;
+        }
+        return (int)res;
+    }
+}
