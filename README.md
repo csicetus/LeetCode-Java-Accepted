@@ -2,6 +2,8 @@ LeetCode-Java-Accepted
 ===
 This is the Java solutions of Leetcode problems.
 
+Details
+===
 ### Title and answer format
 ```
 /*
@@ -42,8 +44,6 @@ class Solution {
 * [Top 100 Liked Questions](./Top100.md)
 * [Top Interview Questions](./Top100.md)
 * [Question classification and idea](./Top100.md)
-* [All of problems and solutions](LeetCode-Problems-&-Solutions)
-
 
 ### LeetCode Problems & Solutions
 
