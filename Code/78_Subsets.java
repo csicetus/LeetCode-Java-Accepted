@@ -2,7 +2,7 @@
  * 78. Subsets
  * Target: Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.
  * Difficulty：Medium
- * Classification：String, Backtracking
+ * Classification：Array, Backtracking, Bit manipulation
  */
 
 /*
@@ -93,7 +93,7 @@ class Solution {
 /*
  * Solution 4
  * 2019-06-28  Runtime: 1 ms
- * Algorithm: => Bits
+ * Algorithm: => Bit manipulation
  */
  
  class Solution {
