@@ -68,8 +68,51 @@ class Solution {
 
 /*
  * Solution 3
- * 2019-06-28  Runtime: 1 ms
+ * 2019-06-28  Runtime: 0 ms
  * Algorithm: => Backtracking
  */
  
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        backtracking(nums, 0, new ArrayList<>(), res);
+        return res;
+    }
+    
+    public void backtracking(int[] nums, int start, ArrayList<Integer> temp, List<List<Integer>> res) {
+        res.add(new ArrayList<>(temp));
+        for (int i = start; i < nums.length; i++) {
+            temp.add(nums[i]);
+            backtracking(nums, i + 1, temp, res);
+            temp.remove(temp.size() - 1);
+        }
+    }
+}
+
+
+/*
+ * Solution 4
+ * 2019-06-28  Runtime: 1 ms
+ * Algorithm: => Bits
+ */
  
+ class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        int groups = 1 << nums.length;  // exists 2^nums.length groups
+        for (int i = 0; i < groups; i++) {
+            List<Integer> tmp = new ArrayList<>();
+            int count = 0;  // corresponse to nums[count]
+            int i_copy = i;  // aimed for moving bits. 
+            while (i_copy != 0) {
+                if ((i_copy & 1) == 1) {    // check if it is 1
+                    tmp.add(nums[count]);
+                }
+                count++;
+                i_copy = i_copy >> 1;
+            }
+            res.add(tmp);
+        }
+        return res;
+    }
+}
