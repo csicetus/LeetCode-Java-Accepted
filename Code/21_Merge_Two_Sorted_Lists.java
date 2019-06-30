@@ -14,7 +14,7 @@
  * }
  */
  
- /*
+/*
  * Solution 1
  * 2019-06-10  Runtime: 0 ms
  * Algorithm: => Iterate.
