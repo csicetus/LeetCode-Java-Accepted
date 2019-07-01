@@ -41,3 +41,15 @@ class Solution {
         getRes(node.right, res);
     }
 }
+
+
+class Solution {
+    public boolean isValidBST(TreeNode root) {
+        return getRes(root, null, null);
+    }
+    private boolean getRes(TreeNode node, Integer lo, Integer hi) {
+        if (node == null) return true;
+        return (lo == null || node.val > lo) && (hi == null || node.val < hi) && 
+                getRes(node.left, lo, node.val) && getRes(node.right, node.val, hi);
+    }
+}
