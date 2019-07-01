@@ -45,7 +45,34 @@ class Solution {
 
 /*
  * Solution 2
- * 2019-06-29  Runtime: 0 ms
+ * 2019-06-30  Runtime: 2 ms
+ * Algorithm: => Inorder and Stack
+ * Time complexity: O(h), Space complexity: O(h) where h is the depth of the tree.
+ */
+
+class Solution {
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) return true;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode pre = null;
+        while (root != null || !stack.isEmpty()) {
+           while (root != null) {
+              stack.push(root);
+              root = root.left;
+           }
+           root = stack.pop();
+           if(pre != null && root.val <= pre.val) return false;
+           pre = root;
+           root = root.right;
+        }
+        return true;
+    }
+}
+
+
+/*
+ * Solution 3
+ * 2019-06-30  Runtime: 0 ms
  * Algorithm: => Inorder recursion
  * Time complexity: ?, Space complexity: ?
  */
@@ -63,30 +90,25 @@ class Solution {
 
 
 /*
- * Solution 3
+ * Solution 4
  * 2019-06-30  Runtime: 0 ms
  * Algorithm: => Inorder recursion
  * Time complexity: ?, Space complexity: ?
  */
 
 class Solution {
-    TreeNode prev;
-        
+    TreeNode prev;       
     public boolean isValidBST(TreeNode root) {
         if (root == null)
-            return true;
-        
+            return true;       
         if(!isValidBST(root.left))
-            return false;
-        
+            return false;        
         if (prev != null && prev.val >= root.val)
             return false;
         
-        prev = root;
-        
+        prev = root;        
         if (!isValidBST(root.right))
-            return false;
-        
+            return false;       
         return true;
     }
 }
