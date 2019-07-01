@@ -43,6 +43,13 @@ class Solution {
 }
 
 
+/*
+ * Solution 2
+ * 2019-06-29  Runtime: 0 ms
+ * Algorithm: => Inorder recursion
+ * Time complexity: ?, Space complexity: ?
+ */
+
 class Solution {
     public boolean isValidBST(TreeNode root) {
         return getRes(root, null, null);
@@ -51,5 +58,35 @@ class Solution {
         if (node == null) return true;
         return (lo == null || node.val > lo) && (hi == null || node.val < hi) && 
                 getRes(node.left, lo, node.val) && getRes(node.right, node.val, hi);
+    }
+}
+
+
+/*
+ * Solution 3
+ * 2019-06-30  Runtime: 0 ms
+ * Algorithm: => Inorder recursion
+ * Time complexity: ?, Space complexity: ?
+ */
+
+class Solution {
+    TreeNode prev;
+        
+    public boolean isValidBST(TreeNode root) {
+        if (root == null)
+            return true;
+        
+        if(!isValidBST(root.left))
+            return false;
+        
+        if (prev != null && prev.val >= root.val)
+            return false;
+        
+        prev = root;
+        
+        if (!isValidBST(root.right))
+            return false;
+        
+        return true;
     }
 }
