@@ -39,7 +39,10 @@ class Solution {
 /*
  * Solution 2
  * 2019-07-01  Runtime: 1 ms
- * Algorithm: => Iteration and Queue
+ * Algorithm: => Iteration and Queue. Then the algorithm works similarly to BFS, with some key differences. 
+ *               Each time, two nodes are extracted and their values compared. 
+ *               Then, the right and left children of the two nodes are inserted in the queue in opposite order. 
+ *               The algorithm is done when either the queue is empty, or we detect that the tree is not symmetric.
  * Time complexity: O(n), Space complexity: O(n) worsest, n is the number of nodes in binary tree
  */
 
