@@ -51,10 +51,10 @@ class Solution {
 | 002 [Java](./Code/2_Add_Two_Numbers.java)
 | 003 [Java](./Code/3_Longest_Substring_Without_Repeating_Characters.java)
 | 004 [Java](./Code/4_Median_of_Two_Sorted_Arrays.java)
-| 005 blank
-| 007 [Java]
-| 008 [Java]
-| 009 [Java]
+| 005 Java
+| 007 Java
+| 008 Java
+| 009 Java
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
 | 011 [Java](./Code/11_Container_With_Most_Water.java)
 | 013 [Java]
