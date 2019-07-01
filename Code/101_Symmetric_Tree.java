@@ -39,6 +39,27 @@ class Solution {
 /*
  * Solution 2
  * 2019-07-01  Runtime: 1 ms
- * Algorithm: => Stack
- * Time complexity: O(n), Space complexity: O(h), h is the height of binary tree
+ * Algorithm: => Iteration and Queue
+ * Time complexity: O(n), Space complexity: O(n) worsest, n is the number of nodes in binary tree
  */
+
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null) return true;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root.left);
+        q.add(root.right);
+        while (!q.isEmpty()) {
+            TreeNode t1 = q.poll();
+            TreeNode t2 = q.poll();
+            if (t1 == null && t2 == null) continue;
+            if (t1 == null || t2 == null) return false;
+            if (t1.val != t2. val) return false;
+            q.add(t1.left);
+            q.add(t2.right);
+            q.add(t1.right);
+            q.add(t2.left);
+        }
+        return true;
+    }
+}
