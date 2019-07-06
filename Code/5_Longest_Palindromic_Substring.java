@@ -10,8 +10,7 @@
  * 2019-06-03  Runtime: 61 ms
   * Algorithm: Use one-dimensional(optimized by two-dimensional) to find Longest Common Substring. 
  *            The end position of Longest Common Substring of reverse string should corresponding to the orginal position.
- * Note: Time complexity: O(n^2); space complexity: reduced to O(n)(two-dimensional space complexity is O(n^2)).
- * Time complexity: ? Space complexity: ?
+ * Time complexity: O(n^2); space complexity: reduced to O(n)(two-dimensional space complexity is O(n^2)).
  */
 
  class Solution {
@@ -57,8 +56,7 @@
  * Algorithm: P(i, j) = {   true   s[i, j] is palindromic substring
  *                          false  s[i, j] is not palindromic substring}
  *            P(i, j) = (P(i + 1, j - 1) && s[i] == s[j]).
- * Note: Time complexity: O(n^2); space complexity: reduced to O(n)(two-dimensional space complexity is O(n^2)).
- * Time complexity: ? Space complexity: ?
+ * Time complexity: O(n^2); space complexity: reduced to O(n)(two-dimensional space complexity is O(n^2)).
  */
 
  class Solution {
@@ -88,8 +86,7 @@
  *               and expand left and right to determine whether the left and right characters are equal. 
  *            2. Because of the occurrence of odd and even strings, 
  *               We need to expand from one character or from position between two characters.
- * Note: Time complexity: O(n^2); space complexity: O(1).
- * Time complexity: ? Space complexity: ?
+ * Time complexity: O(n^2); space complexity: O(1).
  */
 
 class Solution {
