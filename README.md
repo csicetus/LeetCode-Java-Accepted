@@ -21,6 +21,7 @@ Details
  *               first layer recursive: combination("a", "23", 1, ""), combination("b", "23", 1, ""), combination("c", "23", 1, "");
  *               Start with 'a', then recursively to 'd' , then 'g' , add "adg", then add "adh", then add "adi" ... from left to right, 
  *               recursively after it is added.
+ * Time Complexity: O(logn), Space Conplexity: O(1)
  */
 
 class Solution {
@@ -34,6 +35,7 @@ class Solution {
  * Algorithm: => Queue iteration
  *               If digits == "236", first loop: res = [a, b, c], second loop: res = [b, c, ad, af, ae]...
  *               Until i == 2, res = [ad, ae, af, bd, be, bf, cd, ce, cf]
+ * Time Complexity: O(n), Space Conplexity: O(n)
  */
 
 class Solution {
@@ -52,7 +54,7 @@ class Solution {
 | 003 [Java](./Code/3_Longest_Substring_Without_Repeating_Characters.java)
 | 004 [Java](./Code/4_Median_of_Two_Sorted_Arrays.java)
 | 005 Java
-| 007 Java
+| 007 [Java](./Code/7_Reverse_Integer.java)
 | 008 Java
 | 009 Java
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
