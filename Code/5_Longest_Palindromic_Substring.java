@@ -118,7 +118,7 @@ class Solution {
 
 
 /*
- * Solution 3
+ * Solution 4
  * 2019-06-03  Runtime: 22 ms
  * Algorithm: => Manacher's Algorithm           
  * Time complexity: O(n^2); space complexity: O(1).
