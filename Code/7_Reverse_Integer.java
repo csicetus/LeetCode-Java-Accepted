@@ -2,13 +2,12 @@
  * 7. Reverse Integer
  * Target: Given a 32-bit signed integer, reverse digits of an integer.
  * Difficulty：Easy
- * Classification：The remainder gets a single digit, then divides by 10 to remove the single digit, 
- *                 and then uses a variable to store the inverted number.
+ * Classification：Math
  */
 
 /*
  * Solution 1
- * 2019-06-08  Runtime: 0 ms
+ * 2019-06-08  Runtime: 1 ms
  * Algorithm: => Recursive
  * Time Complexity: O(logx), Space Conplexity: O(1)
  */
