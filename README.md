@@ -53,7 +53,7 @@ class Solution {
 | 002 [Java](./Code/2_Add_Two_Numbers.java)
 | 003 [Java](./Code/3_Longest_Substring_Without_Repeating_Characters.java)
 | 004 [Java](./Code/4_Median_of_Two_Sorted_Arrays.java)
-| 005 Java
+| 005 [Java](./Code/5_Longest_Palindromic_Substring.java)
 | 007 [Java](./Code/7_Reverse_Integer.java)
 | 008 [Java](./Code/8_String_to_Integer(atoi).java)
 | 009 Java
