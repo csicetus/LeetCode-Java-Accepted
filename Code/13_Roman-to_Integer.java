@@ -40,11 +40,46 @@
  
 /*
  * Solution 2
+ * 2019-07-08  Runtime: 7 ms
+ * Algorithm: => Search from the end of string and list all of possible situations.
+ * Time Complexity: O(n), n is the length of string. Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int romanToInt(String s) {
+        int res = 0;
+        String[] special = {"I", "X", "C"};
+        int symbol = 1;
+        List<String> strSpe = Arrays.asList(special);
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("I", 1);
+        map.put("V", 5);
+        map.put("X", 10);
+        map.put("L", 50);
+        map.put("C", 100);
+        map.put("D", 500);
+        map.put("M", 1000);
+        
+        for (int i = s.length() - 1; i >= 0; i--) {
+            symbol = 1;       
+            String st = s.substring(i, i + 1);
+            if (strSpe.contains(st) && res >= 5 * map.get(st)){
+                symbol = -1;
+            }           
+            res += map.get(st) * symbol;
+        }            
+        return res;
+    }
+}
+ 
+
+/*
+ * Solution 3
  * 2019-07-08  Runtime: 4 ms
  * Algorithm: => Search from the end of string and list all of possible situations.
  * Time Complexity: O(n), n is the length of string. Space Conplexity: O(1)
  */
- 
+
  class Solution {
     public int romanToInt(String s) {
         int res = 0;
