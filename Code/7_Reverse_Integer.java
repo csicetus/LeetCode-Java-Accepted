@@ -7,8 +7,8 @@
 
 /*
  * Solution 1
- * 2019-06-08  Runtime: 1 ms
- * Algorithm: => Recursive
+ * 2019-07-07  Runtime: 1 ms
+ * Algorithm: => Math
  * Time Complexity: O(logx), Space Conplexity: O(1)
  */
  
