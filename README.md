@@ -55,7 +55,7 @@ class Solution {
 | 004 [Java](./Code/4_Median_of_Two_Sorted_Arrays.java)
 | 005 Java
 | 007 [Java](./Code/7_Reverse_Integer.java)
-| 008 Java
+| 008 [Java](./Code/8_String_to_Integer(atoi).java)
 | 009 Java
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
 | 011 [Java](./Code/11_Container_With_Most_Water.java)
