@@ -60,7 +60,7 @@ class Solution {
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
 | 011 [Java](./Code/11_Container_With_Most_Water.java)
 | 013 [Java](./Code/13_Roman-to_Integer.java)
-| 014 Java
+| 014 [Java](./Code/14_Longest_Common_Prefix.java)
 | 015 [Java](./Code/15_3Sum.java)
 | 016 Java
 | 017 [Java](./Code/17_Letter_Combinations_of_a_Phone_Number.java)
