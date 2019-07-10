@@ -72,7 +72,7 @@ class Solution {
 | 024 Java
 | 026 [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
 | 027 Java
-| 028 Java
+| 028 [Java](./Code/28_Implement_strStr().java)
 | 029 Java
 | 031 [Java](./Code/31_Next_Permutation.java)
 | 032 Java
