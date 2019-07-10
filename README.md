@@ -70,7 +70,7 @@ class Solution {
 | 022 [Java](./Code/22_Generate_Parentheses.java)
 | 023 [Java](./Code/23_Merge_k_Sorted_Lists.java)
 | 024 Java
-| 026 Java
+| 026 [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
 | 027 Java
 | 028 Java
 | 029 Java
