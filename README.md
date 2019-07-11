@@ -54,16 +54,20 @@ class Solution {
 | 003 [Java](./Code/3_Longest_Substring_Without_Repeating_Characters.java)
 | 004 [Java](./Code/4_Median_of_Two_Sorted_Arrays.java)
 | 005 [Java](./Code/5_Longest_Palindromic_Substring.java)
+| 006 Java
 | 007 [Java](./Code/7_Reverse_Integer.java)
 | 008 [Java](./Code/8_String_to_Integer(atoi).java)
 | 009 Java
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
+
 | 011 [Java](./Code/11_Container_With_Most_Water.java)
+| 012 Java
 | 013 [Java](./Code/13_Roman-to_Integer.java)
 | 014 [Java](./Code/14_Longest_Common_Prefix.java)
 | 015 [Java](./Code/15_3Sum.java)
 | 016 Java
 | 017 [Java](./Code/17_Letter_Combinations_of_a_Phone_Number.java)
+| 018 Java
 | 019 [Java](./Code/19_Remove_Nth_Node_From_End_of_List.java)
 | 020 [Java](./Code/20_Valid_Parentheses.java)
 | 021 [Java](./Code/21_Merge_Two_Sorted_Lists.java)
