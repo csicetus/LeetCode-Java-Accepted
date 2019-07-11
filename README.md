@@ -78,7 +78,7 @@ class Solution {
 | 027 Java
 | 028 [Java](./Code/28_Implement_strStr().java)
 | 029 [Java](./Code/29_Divide_Two_Integers.java)
-| 030
+| 030 Java
 | 031 [Java](./Code/31_Next_Permutation.java)
 | 032 Java
 | 033 [Java](./Code/33_Search_in_Rotated_Sorted_Array.java)
@@ -139,3 +139,4 @@ class Solution {
 | 098 Java
 | 100 Java
 | 101 [Java](./Code/101_Symmetric_Tree.java)
+| 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
