@@ -45,7 +45,7 @@ class Solution {
 ### Map
 * [Top 100 Liked Questions](./Top100.md)
 * [Top Interview Questions](./Top100.md)
-* [Question classification and idea](./Top100.md)
+* [Question classification and idea](./QuestionClassification.md)
 
 ### LeetCode Problems & Solutions
 
