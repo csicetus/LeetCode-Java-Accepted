@@ -36,7 +36,7 @@ LeetCode Problems & Solutions
 1.1.2 Pointers look back. Time Conplexity: O(n^2)
 
 
-1.2 Reverse direction. Time Conplexity: O(n^2)
+1.2 Reverse direction. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
 ```Java
 public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);  // sort the array
@@ -67,6 +67,7 @@ LeetCode Problems & Solutions
 |----|----------|-----------|------|
 | 015  | [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Java](./Code/15_3Sum.javaa)
 | 016  | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | [Java](./Code/16_3Sum_Closest.java)
+| 018  | [4Sum](https://leetcode.com/problems/4sum/) | Medium | [Java](./Code/18_4Sum.java)
 
 
 ### 2. Other
