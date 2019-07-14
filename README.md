@@ -64,7 +64,7 @@ class Solution {
 | 013 [Java](./Code/13_Roman-to_Integer.java)
 | 014 [Java](./Code/14_Longest_Common_Prefix.java)
 | 015 [Java](./Code/15_3Sum.java)
-| 016 Java
+| 016 [Java](./Code/16_3Sum_Closest.java)
 | 017 [Java](./Code/17_Letter_Combinations_of_a_Phone_Number.java)
 | 018 Java
 | 019 [Java](./Code/19_Remove_Nth_Node_From_End_of_List.java)
