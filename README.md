@@ -66,7 +66,7 @@ class Solution {
 | 015 [Java](./Code/15_3Sum.java)
 | 016 [Java](./Code/16_3Sum_Closest.java)
 | 017 [Java](./Code/17_Letter_Combinations_of_a_Phone_Number.java)
-| 018 Java
+| 018 [Java](./Code/18_4Sum.java)
 | 019 [Java](./Code/19_Remove_Nth_Node_From_End_of_List.java)
 | 020 [Java](./Code/20_Valid_Parentheses.java)
 | 021 [Java](./Code/21_Merge_Two_Sorted_Lists.java)
