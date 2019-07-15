@@ -8,8 +8,29 @@ Details
 1.1 Same direction
 
 1.1.1 Pointers does not look back. Time complexity: O(n)
+One for loop
 ```Java
-public int twoPointers() {
+    public int removeDuplicates(int[] nums) {
+        if (Special case) return 0;
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (Current int Meet the Criteria) {
+                i++;  // add count
+                Change the int
+            }   
+        }
+        return i + 1;
+    }
+```
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Medium | [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
+
+One for loop contains while loop and if condition
+```Java
+    public int twoPointers() {
         for (int i = 0, j = 0; i < n; i++) {
             while (j < n && Current Subarray Not Meet the Criteria) {
                 j++;
@@ -36,7 +57,35 @@ LeetCode Problems & Solutions
 1.1.2 Pointers look back. Time Conplexity: O(n^2)
 
 
-1.2 Reverse direction. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
+1.2 Reverse direction. 
+
+One while loop. For contain water, Time Complexity: O(n).
+```Java
+    public int maxArea(int[] height) {
+        int start = 0;
+        int end = height.length - 1;
+        int maxWater = (end - start) * Math.min(height[end], height[start]);
+        while (start < end){
+            if (height[start] <= height[end]){
+                start ++;
+            }
+            else {
+                end --;
+            }
+            if (maxWater < (end - start) * Math.min(height[end], height[start])){
+                maxWater = (end - start) * Math.min(height[end], height[start]);
+            }
+        }
+        return maxWater;
+    }
+```
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 011  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Java](./Code/11_Container_With_Most_Water.java)
+
+One for loop contains while loop. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
 ```Java
 public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);  // sort the array
@@ -65,7 +114,7 @@ LeetCode Problems & Solutions
 
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
-| 015  | [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Java](./Code/15_3Sum.javaa)
+| 015  | [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Java](./Code/15_3Sum.java)
 | 016  | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | [Java](./Code/16_3Sum_Closest.java)
 | 018  | [4Sum](https://leetcode.com/problems/4sum/) | Medium | [Java](./Code/18_4Sum.java)
 
