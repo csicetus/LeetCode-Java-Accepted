@@ -75,7 +75,7 @@ class Solution {
 | 024 Java
 | 025 Java
 | 026 [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
-| 027 Java
+| 027 [Java](./Code/27_Remove_Element.java)
 | 028 [Java](./Code/28_Implement_strStr().java)
 | 029 [Java](./Code/29_Divide_Two_Integers.java)
 | 030 Java
