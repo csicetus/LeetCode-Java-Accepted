@@ -8,7 +8,7 @@
 /*
  * Solution 1
  * 2019-07-14  Runtime: 1 ms
- * Algorithm: => Two points with same direction
+ * Algorithm: => Two points with same direction. Optimal of Remove Duplicates from Sorted Array I
  * Time Complexity: O(n), Space Conplexity: O(1)
  */
  
@@ -29,6 +29,28 @@
                     count++;
                 }
             }
+        }
+        return i + 1;
+    }
+}
+
+/*
+ * Solution 2
+ * 2019-07-15  Runtime: 1 ms
+ * Algorithm: => Two points with same direction. Check nums[i - 1] and nums[j].
+ * Time Complexity: O(n), Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+        int i = 1;
+        int max = 2;
+        for (int j = 2; j < nums.length; j++) {
+            if (nums[i - max + 1] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            } 
         }
         return i + 1;
     }
