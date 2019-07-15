@@ -128,7 +128,7 @@ class Solution {
 | 077 Java
 | 078 [Java](./Code/78_Subsets.java)
 | 079 [Java](./Code/79_Word_Search.java)
-| 080 Java
+| 080 [Java](./Code/80_Remove_Duplicates_from_Sorted_Array_II.java)
 | 084 Java
 | 085 Java
 | 088 Java
