@@ -16,7 +16,7 @@ One for loop
         for (int j = 1; j < nums.length; j++) {
             if (Current int Meet the Criteria) {
                 i++;  // add count
-                Change the int
+                Change the pre number to current number
             }   
         }
         return i + 1;
@@ -27,6 +27,7 @@ LeetCode Problems & Solutions
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
 | 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Medium | [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
+| 027  | [Remove Element](https://leetcode.com/problems/remove-element/) | Medium | [Java](./Code/27_Remove_Element.java)
 
 One for loop contains while loop and if condition
 ```Java
@@ -87,7 +88,7 @@ LeetCode Problems & Solutions
 
 One for loop contains while loop. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
 ```Java
-public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);  // sort the array
         // note that the diff target has diff end of i(nums.length || nums.length - 2), which depends on the pointers l and r.
         for (int i = 0; i < nums.length - 2; i++){  
@@ -108,7 +109,7 @@ public List<List<Integer>> threeSum(int[] nums) {
             }
         }
         return res;
-}
+    }
 ```
 LeetCode Problems & Solutions
 
