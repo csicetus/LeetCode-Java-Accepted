@@ -86,6 +86,7 @@ LeetCode Problems & Solutions
 |----|----------|-----------|------|
 | 011  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Java](./Code/11_Container_With_Most_Water.java)
 | 167  | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
+| 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Medium | [Java](/Code/240_Search_a_2D_Matrix_II.java)
 
 One for loop contains while loop. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
 ```Java
