@@ -11,7 +11,7 @@
  * Solution 1
  * 2019-07-16  Runtime: 5 ms
  * Algorithm: => Two points with reverse direction
- * Time Complexity: O(n), Space Conplexity: O(1)
+ * Time Complexity: O(m + n), Space Conplexity: O(1)
  */
 
 class Solution {
