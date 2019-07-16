@@ -6,6 +6,7 @@
  * Classification：Array, HashTable
  * Algorithm: The title shows that there must be a unique solution in the array, 
  *            so we can use the hash table to record the elements that have been traversed.
+ * Time Complexity: O(n), Space Conplexity: O(n)
  */
 
 class Solution {
