@@ -80,6 +80,8 @@ One while loop. For contain water, Time Complexity: O(n).
         return maxWater;
     }
 ```
+Note that #167 and #240 is almost the same, because the numbers are sorted in ascending. One diff is that for #240, its Time Complexity is O(m + n), for #167, Time Complexity is O(n + n) = O(n).
+
 LeetCode Problems & Solutions
 
 | \# | Problems | Difficulty | Solution |
