@@ -139,4 +139,5 @@ class Solution {
 | 098 Java
 | 100 Java
 | 101 [Java](./Code/101_Symmetric_Tree.java)
+| 167 [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
