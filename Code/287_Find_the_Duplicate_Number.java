@@ -33,3 +33,30 @@ class Solution {
         return lo;
     }
 }
+
+
+/*
+ * Solution 2
+ * 2019-07-16  Runtime: 0 ms
+ * Algorithm: => Attached the code of Linked List Cycle II.
+ * Time Complexity: ?, Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int slow = 0, fast = 0;
+        while (slow < nums.length && nums[fast] < nums.length) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if (slow == fast) {
+                slow = 0;
+                while (slow != fast) {
+                    slow = nums[slow];
+                    fast = nums[fast];
+                }
+                return slow;
+            }
+        }
+        return -1;
+    }
+}
