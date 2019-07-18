@@ -109,7 +109,7 @@ class Solution {
 | 058 Java
 | 059 Java
 | 060 Java
-| 061 Java
+| 061 [Java](./Code/61_Rotate_List.java)
 | 062 [Java](./Code/62_Unique_Paths.java)
 | 063 Java
 | 064 [Java](./Code/64_Minimum_Path_Sum.java)
