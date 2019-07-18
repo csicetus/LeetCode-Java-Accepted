@@ -136,7 +136,7 @@ class Solution {
 | 085 Java
 | 086 [Java](./Code/86_Partition_List.java)
 | 087 Java
-| 088 Java
+| 088 [Java](./Code/88_Merge_Sorted_Array.java)
 | 089 Java
 | 090 Java
 | 091 Java
