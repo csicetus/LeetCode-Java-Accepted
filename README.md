@@ -129,9 +129,16 @@ class Solution {
 | 078 [Java](./Code/78_Subsets.java)
 | 079 [Java](./Code/79_Word_Search.java)
 | 080 [Java](./Code/80_Remove_Duplicates_from_Sorted_Array_II.java)
+| 081 Java
+| 082 Java
+| 083 Java
 | 084 Java
 | 085 Java
+| 086 [Java](./Code/86_Partition_List.java)
+| 087 Java
 | 088 Java
+| 089 Java
+| 090 Java
 | 091 Java
 | 094 [Java](./Code/94_Binary_Tree_Inorder_Traversal.java)
 | 095 Java
