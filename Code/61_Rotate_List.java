@@ -44,3 +44,41 @@ class Solution {
         return head;
     }
 }
+
+
+/*
+ * Solution 2
+ * 2019-07-17  Runtime: 0 ms
+ * Algorithm: => Linked List and Two Pointers. Find the broken node point by using fast and slow ListNode. Same as #19.
+ * Time Complexity: O(n), Space Conplexity: O(1)
+ */
+
+class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+        if (head == null || k == 0) return head;
+        int len = 0;
+        ListNode h = head;
+        ListNode t = head;
+        while (h != null) {
+            h = h.next;
+            len++;
+            if (h != null) t = h;
+        }
+        int n = k % len;
+        if (n == 0) return head;
+        ListNode fast = head;
+        while (n >= 0) {
+            fast = fast.next;
+            n--;
+        }
+        ListNode slow = head;
+        while (fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        t.next = head;
+        head = slow.next;
+        slow.next = null;
+        return head;
+    }
+}
