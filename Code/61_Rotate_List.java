@@ -66,6 +66,7 @@ class Solution {
         }
         int n = k % len;
         if (n == 0) return head;
+        // Use the fast and slow pointer to find the pointer of the reciprocal n + 1 node, save it as slow
         ListNode fast = head;
         while (n >= 0) {
             fast = fast.next;
