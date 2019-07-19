@@ -41,7 +41,19 @@ class Solution {
 
 /*
  * Solution 2
- * 2019-07-18  Runtime: 0 ms
+ * 2019-07-19  Runtime: 0 ms
  * Algorithm: => Recursion.
- * Time Complexity: O(n), Space Conplexity: O(1)
+ * Time Complexity: ?, Space Conplexity: ?
  */
+
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode second = head.next;
+        head.next = swapPairs(head.next.next);
+        second.next = head;
+        return second;
+    }
+}
