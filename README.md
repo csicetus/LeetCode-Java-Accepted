@@ -72,7 +72,7 @@ class Solution {
 | 021 [Java](./Code/21_Merge_Two_Sorted_Lists.java)
 | 022 [Java](./Code/22_Generate_Parentheses.java)
 | 023 [Java](./Code/23_Merge_k_Sorted_Lists.java)
-| 024 Java
+| 024 [Java](./Code/24_Swap_Nodes_in_Pairs.java)
 | 025 Java
 | 026 [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
 | 027 [Java](./Code/27_Remove_Element.java)
