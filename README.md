@@ -88,7 +88,7 @@ class Solution {
 | 037 Java
 | 038 Java
 | 039 [Java](./Code/39_Combination_Sum.java)
-| 040 Java
+| 040 [Java](./Code/40_Combination_Sum_II.java)
 | 041 Java
 | 042 Java
 | 043 Java
