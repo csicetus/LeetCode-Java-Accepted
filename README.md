@@ -95,7 +95,7 @@ class Solution {
 | 044 Java
 | 045 Java
 | 046 [Java](./Code/46_Permutations.java)
-| 047 Java
+| 047 [Java](./Code/47_Permutations_II.java)
 | 048 [Java](./Code/48_Rotate_Image.java)
 | 049 [Java](./Code/49_Group_Anagrams.java)
 | 050 Java
