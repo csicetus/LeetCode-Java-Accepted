@@ -37,3 +37,50 @@
         }
     }
 }
+
+
+/*
+ * Solution 2
+ * 2019-07-20  Runtime: 3 ms
+ * Algorithm: => Backtracking. HashSet stores used number of the position to prevent duplicate combinations.
+ */
+
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        update(res, 0, nums);
+        return res;
+    }
+    
+    private void update(List<List<Integer>> res, int start, int[] nums) {
+        if (start == nums.length) {
+            List<Integer> temp = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++) {
+                temp.add(nums[i]);
+            }            
+            res.add(new ArrayList<>(temp));
+            return;
+        }
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = start; i < nums.length; i++) {
+            if (set.contains(nums[i])) {
+                continue;
+            }
+            set.add(nums[i]);
+            swap(nums, i, start);
+            update(res, start + 1, nums);
+            swap(nums, i, start);
+        }
+        
+    }
+    
+    private void swap(int[] nums, int i, int start) {
+        int tmp = nums[start];
+        nums[start] = nums[i];
+        nums[i] = tmp;
+    }
+}
+
+
+
