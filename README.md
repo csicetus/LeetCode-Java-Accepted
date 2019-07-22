@@ -83,7 +83,7 @@ class Solution {
 | 032 Java
 | 033 [Java](./Code/33_Search_in_Rotated_Sorted_Array.java)
 | 034 [Java](./Code/34_Find_First_and_Last_Position_of_Element_in_Sorted_Array.java)
-| 035 Java
+| 035 [Java](./Code/35_Search_Insert_Position.java)
 | 036 Java
 | 037 Java
 | 038 Java
