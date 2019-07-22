@@ -11,8 +11,8 @@
  * 2019-07-21  Runtime: 0 ms
  * Algorithm: => Divide and Conquer. Note that r = nums.length rather than nums.length - 1, because when there are only two numbers, 
  *               l == mid, which causes infinite loop. There're 2 solutions：
- *               1. Change the while loop to "while (l <= r)"
- *               2. Change the value of r to "nums.length".
+ *               1. Change the while loop to "while (l <= r)", change "r = mid" to "r = mid - 1" to prevent l == r infinite loop.
+ *               2. Change the value of r to "nums.length". So mid will be the right number of two numbers.
  * Time Complexity: O(logn), n is the length of string. Space Conplexity: O(1)
  */
 
@@ -28,6 +28,25 @@ class Solution {
                 l = mid + 1;
             } else {
                 r = mid;
+            }
+        }
+        return l;
+    }
+}
+
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int l = 0, r = nums.length - 1; 
+        if (nums.length == 0) return 0;
+        while (l <= r) {
+            int mid = (l + r) / 2;
+            if (target == nums[mid]) {
+                return mid;
+            } else if (target > nums[mid]) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
             }
         }
         return l;
