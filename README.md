@@ -86,7 +86,7 @@ class Solution {
 | 035 [Java](./Code/35_Search_Insert_Position.java)
 | 036 Java
 | 037 Java
-| 038 Java
+| 038 [Java](./Code/38_Count_and_Say.java)
 | 039 [Java](./Code/39_Combination_Sum.java)
 | 040 [Java](./Code/40_Combination_Sum_II.java)
 | 041 Java
