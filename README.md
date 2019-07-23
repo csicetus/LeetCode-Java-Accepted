@@ -106,7 +106,7 @@ class Solution {
 | 055 [Java](./Code/55_Jump_Game.java)
 | 056 [Java](./Code/56_Merge_Intervals.java)
 | 057 Java
-| 058 Java
+| 058 [Java](./Code/58_Length_of_Last_Word.java)
 | 059 Java
 | 060 [Java](./Code/60_Permutation_Sequence.java)
 | 061 [Java](./Code/61_Rotate_List.java)
