@@ -34,3 +34,42 @@ class Solution {
         return res.toString();
     }
 }
+
+
+
+/*
+ * Solution 2
+ * 2019-07-22  Runtime: 8 ms
+ * Algorithm: => Iteration
+ * Time Complexity: ?. Space Conplexity: O(1)
+ */
+
+class Solution {
+    public String countAndSay(int n) {
+        String res = "1";
+        while (n > 1) {
+            String tmp = "";
+            for (int i = 0; i < res.length(); i++) {
+                int num = countRepeatNum(res.substring(i));
+                tmp = tmp + num + "" + res.charAt(i);
+                i = i + num - 1;
+            }
+            n--;
+            res = tmp;
+        }
+        return res;
+    }
+    
+    private int countRepeatNum(String str) {
+        int cnt = 1;
+        char first = str.charAt(0);
+        for (int i = 1; i < str.length(); i++) {
+            if (first == str.charAt(i)) {
+                cnt++;
+            } else {
+                break;
+            }
+        }
+        return cnt;
+    }
+}
