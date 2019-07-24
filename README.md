@@ -115,7 +115,7 @@ class Solution {
 | 064 [Java](./Code/64_Minimum_Path_Sum.java)
 | 065 Java
 | 066 [Java](./Code/66_Plus_One.java)
-| 067 Java
+| 067 [Java](./Code/67_Add_Binary.java)
 | 068 Java
 | 069 Java
 | 070 [Java](./Code/70_Climbing_Stairs.java)
