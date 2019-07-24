@@ -117,7 +117,7 @@ class Solution {
 | 066 [Java](./Code/66_Plus_One.java)
 | 067 [Java](./Code/67_Add_Binary.java)
 | 068 Java
-| 069 Java
+| 069 [Java](./Code/69_Sqrt(x).java)
 | 070 [Java](./Code/70_Climbing_Stairs.java)
 | 071 Java
 | 072 Java
