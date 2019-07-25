@@ -144,7 +144,7 @@ class Solution {
 | 095 Java
 | 096 [Java](./Code/96_Unique_Binary_Search_Trees.java)
 | 098 Java
-| 100 Java
+| 100 [Java](./Code/100_Same_Tree.java)
 | 101 [Java](./Code/101_Symmetric_Tree.java)
 | 167 [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
