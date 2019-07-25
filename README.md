@@ -131,7 +131,7 @@ class Solution {
 | 080 [Java](./Code/80_Remove_Duplicates_from_Sorted_Array_II.java)
 | 081 Java
 | 082 Java
-| 083 Java
+| 083 [Java](./Code/83_Remove_Duplicates_from_Sorted_List.java)
 | 084 Java
 | 085 Java
 | 086 [Java](./Code/86_Partition_List.java)
