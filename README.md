@@ -130,7 +130,7 @@ class Solution {
 | 079 [Java](./Code/79_Word_Search.java)
 | 080 [Java](./Code/80_Remove_Duplicates_from_Sorted_Array_II.java)
 | 081 Java
-| 082 Java
+| 082 [Java](./Code/82_Remove_Duplicates_from_Sorted_List_II)
 | 083 [Java](./Code/83_Remove_Duplicates_from_Sorted_List.java)
 | 084 Java
 | 085 Java
