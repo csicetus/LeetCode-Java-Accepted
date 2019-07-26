@@ -57,7 +57,7 @@ class Solution {
 | 006 Java
 | 007 [Java](./Code/7_Reverse_Integer.java)
 | 008 [Java](./Code/8_String_to_Integer(atoi).java)
-| 009 Java
+| 009 [Java](./Code/9_Palindrome_Number.java)
 | 010 [Java](./Code/10_Regular_Expression_Matching.java)
 | 011 [Java](./Code/11_Container_With_Most_Water.java)
 | 012 [Java](./Code/12_Integer_to_Roman.java)
