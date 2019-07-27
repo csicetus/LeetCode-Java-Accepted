@@ -84,14 +84,14 @@ class Solution {
 | 033 [Java](./Code/33_Search_in_Rotated_Sorted_Array.java)
 | 034 [Java](./Code/34_Find_First_and_Last_Position_of_Element_in_Sorted_Array.java)
 | 035 [Java](./Code/35_Search_Insert_Position.java)
-| 036 Java
+| 036 [Java](./Code/36_Valid_Sudoku.java)
 | 037 Java
 | 038 [Java](./Code/38_Count_and_Say.java)
 | 039 [Java](./Code/39_Combination_Sum.java)
 | 040 [Java](./Code/40_Combination_Sum_II.java)
 | 041 Java
 | 042 Java
-| 043 Java
+| 043 [Java](./Code/43_Multiply_Strings.java)
 | 044 Java
 | 045 Java
 | 046 [Java](./Code/46_Permutations.java)
@@ -149,6 +149,10 @@ class Solution {
 | 104 [Java](./Code/104_Maximum_Depth_of_Binary_Tree.java)
 | 108 [Java](./Code/108_Convert_Sorted_Array_to_Binary_Search_Tree.java)
 | 111 [Java](./Code/111_Minimum_Depth_of_Binary_Tree)
+| 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
+| 136 [Java](./Code/136_Single_Number.java)
+| 141 [Java](./Code/141_Linked_List_Cycle.java)
+| 160 [Java](./Code/160_Intersection_of_Two_Linked_Lists.java)
 | 167 [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
 | 240 [Java](./Code/240_Search_a_2D_Matrix_II.java)
