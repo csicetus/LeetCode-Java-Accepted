@@ -8,7 +8,8 @@ Details
 1.1 Same direction
 
 1.1.1 Pointers does not look back. Time complexity: O(n)
-One for loop
+
+One "for" loop
 ```Java
     public int removeDuplicates(int[] nums) {
         if (Special case) return 0;
@@ -28,8 +29,32 @@ LeetCode Problems & Solutions
 |----|----------|-----------|------|
 | 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Medium | [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
 | 027  | [Remove Element](https://leetcode.com/problems/remove-element/) | Medium | [Java](./Code/27_Remove_Element.java)
+| 121  | [Best Time to Buy and Sell Stock ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
 
-One for loop contains while loop and if condition
+One "while" loop
+```Java
+public boolean hasCycle(ListNode head) {
+        if(head == null || head.next == null) return false;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) {
+                return true;
+            }             
+        }
+        return false;
+    }
+```
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Java](Code/141_Linked_List_Cycle.java)
+| 160  | [Intersection of Two Linked Lists ](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy | [Java](./Code/160_Intersection_of_Two_Linked_Lists.java)
+
+One "for" loop contains "while" loop and "if" condition
 ```Java
     public int twoPointers() {
         for (int i = 0, j = 0; i < n; i++) {
@@ -60,7 +85,7 @@ LeetCode Problems & Solutions
 
 1.2 Reverse direction. 
 
-One while loop. For contain water, Time Complexity: O(n).
+One "while" loop. For contain water, Time Complexity: O(n).
 ```Java
     public int maxArea(int[] height) {
         int start = 0;
@@ -90,7 +115,7 @@ LeetCode Problems & Solutions
 | 167  | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Medium | [Java](/Code/240_Search_a_2D_Matrix_II.java)
 
-One for loop contains while loop. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another for loop, Time complexity: O(n^3).
+One "for" loop contains "while" loop. For 3Sum, Time Complexity: O(n^2). For 4Sum, add another "for" loop, Time complexity: O(n^3).
 ```Java
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);  // sort the array
