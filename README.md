@@ -157,3 +157,6 @@ class Solution {
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
 | 240 [Java](./Code/240_Search_a_2D_Matrix_II.java)
 | 287 [Java](./Code/287_Find_the_Duplicate_Number.java)
+| 528 [Java](./Code/538_Convert_BST_to_Greater_Tree.java)
+| 543 [Java](./Code/543_Diameter_of_Binary_Tree)
+| 581 [Java](./Code/581_Shortest_Unsorted_Continuous_Subarray.java)
