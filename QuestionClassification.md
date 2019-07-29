@@ -80,6 +80,33 @@ LeetCode Problems & Solutions
 | 209  | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium| [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
 | 395  | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Medium| [Java]
 
+One "while" loop contains "if" condition and "while" loop
+```Java
+    public ListNode detectCycle(ListNode head) {
+        if(head == null || head.next == null) return null;
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                ListNode slow2 = head;
+                while (slow != slow2) {
+                    slow = slow.next;
+                    slow2 = slow2.next;
+                }
+                return slow;
+            }
+        }
+        return null;
+    }
+```
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 142  | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/submissions/) | Meduim | [Java](Code/142_Linked_List_Cycle_II.java)
+
 1.1.2 Pointers look back. Time Conplexity: O(n^2)
 
 
