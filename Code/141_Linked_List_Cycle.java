@@ -5,6 +5,7 @@
  *         If pos is -1, then there is no cycle in the linked list.
  * Difficulty：Easy
  * Classification：LinkedList, Two Pointers
+ * Same as #142. Linked List Cycle II
  */
 
 /*
