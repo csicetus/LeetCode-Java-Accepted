@@ -177,3 +177,20 @@ LeetCode Problems & Solutions
 
 
 ### 2. Other
+1.1 DFS
+
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 102  | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Java](./Code/102_Binary_Tree_Level_Order_Traversal)
+
+1.2 BFS
+
+LeetCode Problems & Solutions
+
+| \# | Problems | Difficulty | Solution |
+|----|----------|-----------|------|
+| 102  | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Java](./Code/102_Binary_Tree_Level_Order_Traversal)
+| 104  | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Medium | [Java](./Code/104_Maximum_Depth_of_Binary_Tree.java)
+| 111  | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | Medium | [Java](./Code/111_Minimum_Depth_of_Binary_Tree.java)
