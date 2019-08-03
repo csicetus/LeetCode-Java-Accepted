@@ -173,6 +173,8 @@ class Solution {
 | 309 [Java](./Code/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.java)
 | 322 [Java](./Code/322_Coin_Change.java)
 | 338 [Java](./Code/338_Counting_Bits.java)
+| 347 [Java](./Code/347_Top_K_Frequent_Elements.java)
+| 394 [Java](./Code/394_Decode_String.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
 | 416 [Java](./Code/416_Partition_Equal_Subset_Sum.java)
 | 438 [Java](./Code/438_Find_All_Anagrams_in_a_String.java)
