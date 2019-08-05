@@ -49,10 +49,40 @@
 
 /*
  * Solution 3
- * 2019-08-03  Runtime: 7 ms
+ * 2019-08-04  Runtime: 23 ms
  * Algorithm: => Quicksort. 
  * Time Complexity: best: O(n); worst: O(n^2). Space Conplexity: O(1). 
  */
  
- 
+ class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int lo = 0, hi = nums.length - 1;
+        int idx = nums.length - k;
+        while (lo < hi) {
+            int i = partion(nums, lo, hi);
+            if (i < idx) lo = i + 1;
+            else if (i > idx) hi = i - 1;
+            else return nums[i];
+        }
+        return nums[lo];
+    }
+    
+    private int partion(int[] nums, int lo, int hi) {
+        int i = lo, tmp;
+        while (lo <= hi) {
+            while (lo <= hi && nums[lo] <= nums[i]) lo++;
+            while (lo <= hi && nums[hi] > nums[i]) hi--;
+            if (lo > hi) break;
+            swap(nums, lo, hi);
+        }
+        swap(nums, i, hi);
+        return hi;
+    }
+    
+    private void swap(int[] nums, int a, int b) {
+        int tmp = nums[b];
+        nums[b] = nums[a];
+        nums[a] = tmp;
+    }
+}
  
