@@ -54,7 +54,32 @@ class Solution {
 /*
  * Solution 3
  * 2019-08-05  Runtime: 0 ms
- * Algorithm: => Iteration(bottom-up). 
+ * Algorithm: => Iteration(bottom-up). res[0] = nums[0]. The size of int[] res is equal to size of int[] nums.
+ *               Note that res[1] = Math.max(nums[0], nums[1]), because the size of int[] nums can be 2.
+ *               For example, if nums = [2, 1]. Then it will return Math.max(2, 1) = 2.
+ * Time Complexity: O(n). Space Conplexity: O(n). 
+ */
+
+class Solution {
+    public int rob(int[] nums) {
+        if (nums.length == 0) return 0;
+        if (nums.length < 2) return nums[0];
+        int[] res = new int[nums.length];
+        Arrays.fill(res, 0);
+        res[0] = nums[0];
+        res[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            res[i] = Math.max(res[i - 1], res[i - 2] + nums[i]);
+        }
+        return res[nums.length - 1];
+    }
+}
+
+
+/*
+ * Solution 4
+ * 2019-08-05  Runtime: 0 ms
+ * Algorithm: => Iteration(bottom-up). res[1] = nums[0]. The size of int[] res is larger than the size of int[] nums, it has dislocation.
  * Time Complexity: O(n). Space Conplexity: O(n). 
  */
  
@@ -73,7 +98,7 @@ class Solution {
 
 
 /*
- * Solution 4
+ * Solution 5
  * 2019-08-05  Runtime: 7 ms
  * Algorithm: => Iteration + 2 variables(bottom-up). Optimal of sol 3. Going just 2 steps back, like Fibonacci sequence.
  * Time Complexity: O(n). Space Conplexity: O(1). 
@@ -90,5 +115,30 @@ class Solution {
             pre2 = tmp;
         }
         return pre1;
+    }
+}
+
+
+/*
+ * Solution 6
+ * 2019-08-05  Runtime: 0 ms
+ * Algorithm: => Iteration(bottom-up). Scrolling array.
+ *               Note that return Math.max(res[0], res[1]), because the size of int[] nums can be odd or even.
+ *               The scroll array arr[0] stores the maximum of the odd array, and the arr[1] stores the maximum of the even array.
+ * Time Complexity: O(n). Space Conplexity: O(1). 
+ */
+
+class Solution {
+    public int rob(int[] nums) {
+        if (nums.length == 0) return 0;
+        if (nums.length < 2) return nums[0];
+        int[] res = new int[2];
+        Arrays.fill(res, 0);
+        res[0] = nums[0];
+        res[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            res[i % 2] = Math.max(res[(i - 1) % 2], res[(i - 2) % 2] + nums[i]);
+        }
+        return Math.max(res[0], res[1]);
     }
 }
