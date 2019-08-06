@@ -179,6 +179,7 @@ class Solution {
 | 337 [Java](./Code/337_House_Robber_III.java)
 | 338 [Java](./Code/338_Counting_Bits.java)
 | 347 [Java](./Code/347_Top_K_Frequent_Elements.java)
+| 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java）
 | 394 [Java](./Code/394_Decode_String.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
 | 416 [Java](./Code/416_Partition_Equal_Subset_Sum.java)
