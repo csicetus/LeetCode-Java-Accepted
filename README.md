@@ -122,7 +122,7 @@ class Solution {
 | 071 Java
 | 072 Java
 | 073 Java
-| 074 Java
+| 074 [Java](./Code/74_Search_a_2D_Matrix.java)
 | 075 [Java](./Code/75_Sort_Colors.java)
 | 076 Java
 | 077 Java
@@ -180,7 +180,7 @@ class Solution {
 | 338 [Java](./Code/338_Counting_Bits.java)
 | 347 [Java](./Code/347_Top_K_Frequent_Elements.java)
 | 367 [Java](./Code/367_Valid_Perfect_Square.java)
-| 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java）
+| 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java)
 | 394 [Java](./Code/394_Decode_String.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
 | 416 [Java](./Code/416_Partition_Equal_Subset_Sum.java)
@@ -195,3 +195,4 @@ class Solution {
 | 621 [Java](./Code/621_Task_Scheduler.java)
 | 647 [Java](./Code/647_Palindromic_Substrings.java)
 | 739 [Java](./Code/739_Daily_Temperatures.java)
+| 852 [Java](./Code/852_Peak_Index_in_a_Mountain_Array.java)
