@@ -31,14 +31,14 @@ class Solution {
 
 /*
  * Solution 2
- * 2019-07-25  Runtime: 0 ms
- * Algorithm: => Iteration. THERE IS A PROBELM!!!!!
+ * 2019-07-25  Runtime: 5 ms
+ * Algorithm: => Iteration.
  * Time Complexity: ?. Space Conplexity: O(1)
  */
  
- class Solution {
+class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
-        if (nums == null) return null;
+        if (nums == null || nums.length == 0) return null;
         TreeNode root = new TreeNode(0);
         Stack<Object> stack = new Stack<>();
         stack.push(nums.length - 1);
@@ -49,6 +49,7 @@ class Solution {
             int lo = (int)stack.pop();
             int hi = (int)stack.pop();
             int mid = lo + (hi - lo) / 2;
+            tmp.val = nums[mid];
             if (lo <= mid - 1) {
                 tmp.left = new TreeNode(0);
                 stack.push(mid - 1);
@@ -62,6 +63,6 @@ class Solution {
                 stack.push(tmp.right);
             }
         }
-        return root;  
+        return root;    
     }
 }
