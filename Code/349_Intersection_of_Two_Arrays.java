@@ -75,3 +75,44 @@
     }
 }
  
+
+/*
+ * Solution 3
+ * 2019-08-24  Runtime: 3 ms
+ * Algorithm: => Same as sol 2. Use two HashSet contains unique numbers from nums1 and nums2, then take their intersection.
+ *               Note that the result depends on the size of two HashSet.
+ * Time Complexity: O(n+m), where n and m are arrays' lengths. Space Conplexity: O(m+n) is worst.
+ */
+
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> s1 = new HashSet<>();
+        Set<Integer> s2 = new HashSet<>();
+        for (int n1 : nums1) {
+            if (!s1.contains(n1)) {
+                s1.add(n1);
+            }
+        }
+        for (int n2 : nums2) {
+            if (!s2.contains(n2)) {
+                s2.add(n2);
+            }
+        }
+        if (s1.size() > s2.size()) {
+            return intersectionHelper(s1, s2);
+        } else {
+            return intersectionHelper(s2, s1);
+        }
+    }
+    
+    private int[] intersectionHelper(Set<Integer> s1, Set<Integer> s2) {
+        int idx = 0;
+        int[] res = new int[s1.size()];
+        for (int n1 : s1) {
+            if (s2.contains(n1)) {
+                res[idx++] = n1;
+            }
+        }
+        return Arrays.copyOf(res, idx);
+    }
+}
