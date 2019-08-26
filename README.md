@@ -187,6 +187,7 @@ class Solution {
 | 350 [Java](./Code/350_Intersection_of_Two_Arrays_II.java)
 | 367 [Java](./Code/367_Valid_Perfect_Square.java)
 | 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java)
+| 387 [Java](./Code/387_First_Unique_Character_in_a_String.java)
 | 394 [Java](./Code/394_Decode_String.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
 | 416 [Java](./Code/416_Partition_Equal_Subset_Sum.java)
