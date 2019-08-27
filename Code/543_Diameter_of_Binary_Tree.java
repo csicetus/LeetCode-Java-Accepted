@@ -9,7 +9,9 @@
 /*
  * Solution 1
  * 2019-07-28  Runtime: 0 ms
- * Algorithm: => DFS.
+ * Algorithm: => DFS. The reason why separate res and return value because the paths are diff.
+ *               For example, if tree is [1,2,3,4,5]. For node 2, we can assign height as height(node 4) + height(node 5),
+ *               However, when we search upper nodes, we should select maximum height of node 4 and node 5 because the path can't bending.
  * Time Complexity: O(N), N is the number of nodes. Space Conplexity: O(N)
  */
  
@@ -36,6 +38,32 @@ class Solution {
         int L = height(node.left);
         int R = height(node.right);
         res = Math.max(res, L + R + 1);
+        return Math.max(L, R) + 1;
+    }
+}
+
+
+/*
+ * Solution 2
+ * 2019-07-28  Runtime: 1 ms
+ * Algorithm: => Easy understanding DFS. The reason why separate res and return value because the paths are diff.
+ *               For example, if tree is [1,2,3,4,5]. For node 2, we can assign height as height(node 4) + height(node 5),
+ *               However, when we search upper nodes, we should select maximum height of node 4 and node 5 because the path can't bending.
+ * Time Complexity: O(N), N is the number of nodes. Space Conplexity: O(N)
+ */
+
+class Solution {
+    int res = 0;
+    public int diameterOfBinaryTree(TreeNode root) {
+        height(root);
+        return res;
+    }
+    
+    private int height(TreeNode node) {
+        if (node == null) return 0;
+        int L = height(node.left);
+        int R = height(node.right);
+        res = Math.max(res, L + R);
         return Math.max(L, R) + 1;
     }
 }
