@@ -159,6 +159,7 @@ class Solution {
 | 141 [Java](./Code/141_Linked_List_Cycle.java)
 | 148 [Java](./Code/148_Sort_List.java)
 | 152 [Java](./Code/152_Maximum_Product_Subarray.java)
+| 155 [Java](./Code/155_Min_Stack.java)
 | 160 [Java](./Code/160_Intersection_of_Two_Linked_Lists.java)
 | 167 [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 171 [Java](./Code/171_Excel_Sheet_Column_Number.java)
