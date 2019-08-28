@@ -6,6 +6,8 @@
  *         More formally, the property root.val = min(root.left.val, root.right.val) always holds.
  *         Given such a binary tree, you need to output the second minimum value in the set made of all the nodes' value in the whole tree.
  *         If no such second minimum value exists, output -1 instead.
+ * Follow up: What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? 
+ *            How would you optimize the kthSmallest routine?
  * Difficulty：Easy
  * Classification：Tree
  */
@@ -91,5 +93,31 @@ class Solution {
         int l = root.left.val == root.val ? findSecondMinimumValue(root.left) : root.left.val;
         int r = root.right.val == root.val ? findSecondMinimumValue(root.right) : root.right.val;
         return l == -1 || r == -1 ? Math.max(l, r) : Math.min(l, r); 
+    }
+}
+
+
+/*
+ * Solution 4
+ * 2019-08-28  Runtime: 0 ms
+ * Algorithm: => Divide and Conquer. 
+ * Time Complexity: Avg O(logn), Worst case O(n). Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int kthSmallest(TreeNode root, int k) {
+        int l = cntNode(root.left);
+        if (l + 1 == k) {
+            return root.val;
+        } else if (l + 1 > k) {
+             return kthSmallest(root.left, k);
+        } else {
+            return kthSmallest(root.right, k - l - 1);
+        }
+    }
+    
+    private int cntNode(TreeNode root) {
+        if (root == null) return 0;
+        return 1 + cntNode(root.left) + cntNode(root.right);
     }
 }
