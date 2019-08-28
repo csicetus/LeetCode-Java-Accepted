@@ -11,6 +11,9 @@
  * Solution 1
  * 2019-08-02  Runtime: 7 ms
  * Algorithm: => Greedy. Sort the people to make them stand from the highest to shortest and the count of people before them.
+ *               For Arrays.sort Comparator, if the return value is "-", Do not move. If not, change the order.
+ *               The "add" function is: if the current position has number, add new number to that position and push old number and 
+ *               numbers after old number one position after.
  * Time Complexity: O(n^2). Space Conplexity: O(n). 
  */
  
