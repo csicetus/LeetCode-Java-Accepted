@@ -45,7 +45,7 @@ class Solution {
 ### Map
 * [Top 100 Liked Questions](./Top100.md)
 * [Top Interview Questions](./Top100.md)
-* [Question classification and idea](./QuestionClassification.md)
+* [Question classification and idea](./QuestionClassification)
 
 ### LeetCode Problems & Solutions
 
@@ -176,6 +176,7 @@ class Solution {
 | 236 [Java](./Code/236_Lowest_Common_Ancestor_of_a_Binary_Tree.java)
 | 238 [Java](./Code/238_Product_of_Array_Except_Self.java)
 | 240 [Java](./Code/240_Search_a_2D_Matrix_II.java)
+| 268 [Java](./Code/268_Missing_Number.java)
 | 278 [Java](./Code/278_First_Bad_Version.java)
 | 279 [Java](./Code/279_Perfect_Squares.java)
 | 287 [Java](./Code/287_Find_the_Duplicate_Number.java)
@@ -190,6 +191,7 @@ class Solution {
 | 349 [Java](./Code/349_Intersection_of_Two_Arrays.java)
 | 350 [Java](./Code/350_Intersection_of_Two_Arrays_II.java)
 | 367 [Java](./Code/367_Valid_Perfect_Square.java)
+| 371 [Java](./Code/371_Sum_of_Two_Integers.java)
 | 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java)
 | 387 [Java](./Code/387_First_Unique_Character_in_a_String.java)
 | 394 [Java](./Code/394_Decode_String.java)
