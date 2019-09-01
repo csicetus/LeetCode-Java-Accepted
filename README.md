@@ -165,6 +165,7 @@ class Solution {
 | 171 [Java](./Code/171_Excel_Sheet_Column_Number.java)
 | 172 [Java](./Code/172_Factorial_Trailing_Zeroes.java)
 | 189 [Java](./Code/189_Rotate_Array.java)
+| 190 [Java](./Code/190_Reverse_Bits.java)
 | 198 [Java](./Code/198_House_Robber.java)
 | 200 [Java](./Code/200_Number_of_Islands.java)
 | 208 [Java](./Code/208_Implement_Trie_(Prefix_Tree).java)
