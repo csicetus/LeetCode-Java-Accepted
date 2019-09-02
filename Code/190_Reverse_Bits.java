@@ -9,7 +9,7 @@
  * Solution 1
  * 2019-08-31  Runtime: 1 ms
  * Algorithm: => Bit. 
- * Time Complexity: ?. Space Conplexity: O(1)
+ * Time Complexity: O(1). Space Conplexity: O(1)
  */
  
  public class Solution {
@@ -31,7 +31,7 @@
  * Solution 2
  * 2019-09-01  Runtime: 1 ms
  * Algorithm: => Bit. 
- * Time Complexity: ?. Space Conplexity: O(1)
+ * Time Complexity: O(1). Space Conplexity: O(1)
  */
  
 public class Solution {
@@ -54,8 +54,8 @@ public class Solution {
 /*
  * Solution 3
  * 2019-09-01  Runtime: 1 ms
- * Algorithm: => Bit. Select certain bits and reverse
- * Time Complexity: ?. Space Conplexity: O(1)
+ * Algorithm: => Bit Manipulation Trick. Select certain bits and reverse
+ * Time Complexity: O(1). Space Conplexity: O(1)
  */
 
 public class Solution {
