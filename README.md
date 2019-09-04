@@ -186,6 +186,7 @@ class Solution {
 | 309 [Java](./Code/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.java)
 | 322 [Java](./Code/322_Coin_Change.java)
 | 326 [Java](./Code/326_Power_of_Three.java)
+| 328 [Java](./Code/328_Odd_Even_Linked_List.java)
 | 337 [Java](./Code/337_House_Robber_III.java)
 | 338 [Java](./Code/338_Counting_Bits.java)
 | 344 [Java](./Code/344_Reverse_String.java)
