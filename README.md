@@ -196,6 +196,7 @@ class Solution {
 | 367 [Java](./Code/367_Valid_Perfect_Square.java)
 | 371 [Java](./Code/371_Sum_of_Two_Integers.java)
 | 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java)
+| 378 [Java](./Code/378_Kth_Smallest_Element_in_a_Sorted_Matrix.java)
 | 387 [Java](./Code/387_First_Unique_Character_in_a_String.java)
 | 394 [Java](./Code/394_Decode_String.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
