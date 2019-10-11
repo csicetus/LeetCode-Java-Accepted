@@ -24,9 +24,9 @@ LeetCode Problems & Solutions
 
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
-| 046  | [Permutations] (https://leetcode.com/problems/permutations/) | Medium | [Java](./Code/46_Permutations.java)
-| 077  | [Combinations](https://leetcode.com/problems/combinations/submissions/) | Medium | [Java](./Code/77_Combinations.java)
+| 046  | [Permutations](https://leetcode.com/problems/permutations/) | Medium | [Java](../Code/46_Permutations.java)
+| 077  | [Combinations](https://leetcode.com/problems/combinations/submissions/) | Medium | [Java](../Code/77_Combinations.java)
 | 091  | []
-| 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | [Java](./Code/115_Distinct_Subsequences.java)
-| 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | [Java](./Code/131_Palindrome_Partitioning.java)
+| 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | [Java](../Code/115_Distinct_Subsequences.java)
+| 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | [Java](../Code/131_Palindrome_Partitioning.java)
 
