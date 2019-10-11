@@ -27,9 +27,9 @@ LeetCode Problems & Solutions
 
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
-| 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Medium | [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
-| 027  | [Remove Element](https://leetcode.com/problems/remove-element/) | Medium | [Java](./Code/27_Remove_Element.java)
-| 121  | [Best Time to Buy and Sell Stock ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
+| 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Medium | [Java](../Code/26_Remove_Duplicates_from_Sorted_Array.java)
+| 027  | [Remove Element](https://leetcode.com/problems/remove-element/) | Medium | [Java](../Code/27_Remove_Element.java)
+| 121  | [Best Time to Buy and Sell Stock ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Java](../Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
 
 One "while" loop
 ```Java
@@ -52,7 +52,7 @@ LeetCode Problems & Solutions
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
 | 141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Java](Code/141_Linked_List_Cycle.java)
-| 160  | [Intersection of Two Linked Lists ](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy | [Java](./Code/160_Intersection_of_Two_Linked_Lists.java)
+| 160  | [Intersection of Two Linked Lists ](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy | [Java](../Code/160_Intersection_of_Two_Linked_Lists.java)
 
 One "for" loop contains "while" loop and "if" condition
 ```Java
@@ -74,10 +74,10 @@ LeetCode Problems & Solutions
 
 | \# | Problems | Difficulty | Solution |
 |----|----------|-----------|------|
-| 003  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Java](./Code/3_Longest_Substring_Without_Repeating_Characters.java)
-| 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy| [Java](./Code/26_Remove_Duplicates_from_Sorted_Array.java)
-| 076  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard| [Java](./Code/76_Minimum_Window_Substring.java)
-| 209  | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium| [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
+| 003  | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Java](../Code/3_Longest_Substring_Without_Repeating_Characters.java)
+| 026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy| [Java](../Code/26_Remove_Duplicates_from_Sorted_Array.java)
+| 076  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard| [Java](../Code/76_Minimum_Window_Substring.java)
+| 209  | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium| [Java](../Code/209_Minimum_Size_Subarray_Sum.java)
 | 395  | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Medium| [Java]
 
 One "while" loop contains "if" condition and "while" loop
