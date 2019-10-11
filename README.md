@@ -153,6 +153,7 @@ class Solution {
 | 114 [Java](./Code/114_Flatten_Binary_Tree_to_Linked_List.java)
 | 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
 | 125 [Java](./Code/125_Valid_Palindrome.java)
+| 131 [Java](./Code/131_Palindrome_Partitioning.java)
 | 136 [Java](./Code/136_Single_Number.java)
 | 138 [Java](./Code/138_Copy_List_with_Random_Pointer.java)
 | 139 [Java](./Code/139_Word_Break.java)
