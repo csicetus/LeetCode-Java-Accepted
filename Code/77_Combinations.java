@@ -187,3 +187,50 @@ class Solution {
         return dp[n][k];
     }
 }
+
+
+/*
+ * Solution 6
+ * 2019-10-11  Runtime: 85 ms
+ * Algorithm: => Optimal sol 5. DP. Change sol 5 DP[i][j] to DP[j], because when update dp[i][*], we only need the previous dp[i - 1][*]
+ *               For num n, if it is selected, then we need find k - 1 nums in n - 1. If not, then we need find k nums in n - 1.
+ * Time Complexity: ?, Space Conplexity: O(1)
+ */
+
+class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>>[] dp = new List[k + 1];
+        // if k == 0, return empty list
+        dp[0] = new ArrayList<>();
+        dp[0].add(new ArrayList<Integer>());
+        // row from 1 to n
+        for (int i = 1; i <= n; i++) {
+            // col from 1 to k and col <= row
+            List<List<Integer>> temp = new ArrayList<>(dp[0]);
+            for (int j = 1; j <= i && j <= k; j++) {
+                List<List<Integer>> previous = temp;
+                if (dp[j] != null) {
+                    temp = new ArrayList<>(dp[j]);
+                }
+                // if we didn't select i, then need to select total j nums.
+                // if we can select j nums from i - 1
+                // so we have j <= i - 1 => j < i
+                // if i <= j, we set dp[j] empty
+                if (i <= j) {
+                    dp[j] = new ArrayList<>();
+                }
+                // if we select i,
+                // then select j - 1 nums from i - 1
+                for (List<Integer> list : previous) {
+                    // obtain the result of selecting j - 1 nums from i - 1
+                    // then fro each result add i because we selected i
+                    List<Integer> tmp = new ArrayList<>(list);
+                    tmp.add(i);
+                    // add updated result to dp[j]
+                    dp[j].add(tmp);
+                }
+            }
+        }
+        return dp[k];
+    }
+}
