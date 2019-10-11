@@ -9,7 +9,7 @@
 /*
  * Solution 1
  * 2019-10-04  Runtime: 6 ms
- * Algorithm: => Divide problem. aabb -> a|abb, find groups of "abb" and for every group add "a" at the index 0.
+ * Algorithm: => Recursion. Divide problem. aabb -> a|abb, find groups of "abb" and for every group add "a" at the index 0.
  * Time Complexity: ?, Space Conplexity: O(1)
  */
  
@@ -60,7 +60,7 @@
 /*
  * Solution 2
  * 2019-10-10  Runtime: 3 ms
- * Algorithm: => Optimal of sol 2. Divide problem and dp. Divide problem, use dp rather than isPartition() function
+ * Algorithm: => Optimal of sol 2. Recursion. Divide problem and dp. Divide problem, use dp rather than isPartition() function
  * Time Complexity: ?, Space Conplexity: O(1)
  */
  
