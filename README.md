@@ -125,7 +125,7 @@ class Solution {
 | 074 [Java](./Code/74_Search_a_2D_Matrix.java)
 | 075 [Java](./Code/75_Sort_Colors.java)
 | 076 Java
-| 077 Java
+| 077 [Java](./Code/77_Combinations.java)
 | 078 [Java](./Code/78_Subsets.java)
 | 079 [Java](./Code/79_Word_Search.java)
 | 080 [Java](./Code/80_Remove_Duplicates_from_Sorted_Array_II.java)
