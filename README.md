@@ -139,7 +139,7 @@ class Solution {
 | 088 [Java](./Code/88_Merge_Sorted_Array.java)
 | 089 Java
 | 090 Java
-| 091 Java
+| 091 [Java](./Code/91_Decode_Ways.java)
 | 094 [Java](./Code/94_Binary_Tree_Inorder_Traversal.java)
 | 095 Java
 | 096 [Java](./Code/96_Unique_Binary_Search_Trees.java)
