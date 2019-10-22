@@ -102,12 +102,12 @@ class Solution {
 | 051 Java
 | 052 Java
 | 053 [Java](./Code/53_Maximum_Subarray.java)
-| 054 Java
+| 054 [Java](./Code/54_Spiral_Matrix.java)
 | 055 [Java](./Code/55_Jump_Game.java)
 | 056 [Java](./Code/56_Merge_Intervals.java)
 | 057 Java
 | 058 [Java](./Code/58_Length_of_Last_Word.java)
-| 059 Java
+| 059 [Java](./Code/59_Spiral_Matrix_II.java)
 | 060 [Java](./Code/60_Permutation_Sequence.java)
 | 061 [Java](./Code/61_Rotate_List.java)
 | 062 [Java](./Code/62_Unique_Paths.java)
