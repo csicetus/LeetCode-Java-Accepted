@@ -149,6 +149,7 @@ class Solution {
 | 104 [Java](./Code/104_Maximum_Depth_of_Binary_Tree.java)
 | 105 [Java](./Code/105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.java)
 | 108 [Java](./Code/108_Convert_Sorted_Array_to_Binary_Search_Tree.java)
+| 110 [Java](./Code/110_Balanced_Binary_Tree.java)
 | 111 [Java](./Code/111_Minimum_Depth_of_Binary_Tree.java)
 | 114 [Java](./Code/114_Flatten_Binary_Tree_to_Linked_List.java)
 | 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
