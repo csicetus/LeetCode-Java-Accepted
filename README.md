@@ -151,6 +151,8 @@ class Solution {
 | 108 [Java](./Code/108_Convert_Sorted_Array_to_Binary_Search_Tree.java)
 | 110 [Java](./Code/110_Balanced_Binary_Tree.java)
 | 111 [Java](./Code/111_Minimum_Depth_of_Binary_Tree.java)
+| 112 [Java](./Code/112_Path_Sum.java)
+| 113 [Java](./Code/113_Path_Sum_II.java)
 | 114 [Java](./Code/114_Flatten_Binary_Tree_to_Linked_List.java)
 | 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
 | 125 [Java](./Code/125_Valid_Palindrome.java)
