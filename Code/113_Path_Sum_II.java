@@ -69,7 +69,50 @@ class Solution {
 
 /*
  * Solution 2
- * 2019-10-29  Runtime: 1 ms
+ * 2019-11-01  Runtime: 1 ms
  * Algorithm: => DFS
  * Time Complexity: ?, Space Conplexity: O(1)
  */
+
+class Solution {
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        TreeNode pre = null;
+        int pathSum = 0;
+        //stack.push(root);
+        /*int i = 0;*/
+        while (!stack.isEmpty() || cur != null) {
+            /*System.out.println("No. " + i);*/
+            while (cur != null) {
+                stack.push(cur);
+                pathSum += cur.val;
+                temp.add(cur.val);
+                cur = cur.left;
+            }
+            cur = stack.peek();
+            /*System.out.println(cur.val);*/
+            if (cur.left == null && cur.right == null && pathSum == sum) {
+                res.add(new ArrayList<>(temp));
+            }
+            if (cur.right == null || cur.right == pre) {
+                TreeNode popNode = stack.pop();
+                pathSum -= popNode.val;
+                temp.remove(temp.size() - 1);
+                pre = cur;
+                cur = null;
+            } else {
+                cur = cur.right;
+                /*System.out.println("cur  " + cur.val);*/
+            }
+            /*i++;*/
+        }
+        
+        return res;
+    }
+}
