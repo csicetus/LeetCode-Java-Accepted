@@ -203,6 +203,7 @@ class Solution {
 | 378 [Java](./Code/378_Kth_Smallest_Element_in_a_Sorted_Matrix.java)
 | 387 [Java](./Code/387_First_Unique_Character_in_a_String.java)
 | 394 [Java](./Code/394_Decode_String.java)
+| 404 [Java](./Code/404_Sum_of_Left_Leaves.java)
 | 406 [Java](./Code/406_Queue_Reconstruction_by_Height.java)
 | 412 [Java](./Code/412_Fizz_Buzz.java)
 | 416 [Java](./Code/416_Partition_Equal_Subset_Sum.java)
