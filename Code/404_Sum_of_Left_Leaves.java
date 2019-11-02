@@ -75,3 +75,35 @@ class Solution {
         return sumLeft;
     }
 }
+
+
+/*
+ * Solution 3
+ * 2019-11-02  Runtime: 1 ms
+ * Algorithm: => BFS
+ * Time Complexity: ?, Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int sumOfLeftLeaves(TreeNode root) {
+        if (root == null) return 0;
+        int sumLeft = 0;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            TreeNode node = q.poll();
+            if (node.left != null) {
+                if (node.left.left == null && node.left.right == null) {
+                    sumLeft += node.left.val;
+                } else {
+                    q.offer(node.left);
+                }
+            }
+            if (node.right != null) {
+                q.offer(node.right);
+            }
+        }
+        
+        return sumLeft;
+    }
+}
