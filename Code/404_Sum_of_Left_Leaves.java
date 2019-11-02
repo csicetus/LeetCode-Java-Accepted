@@ -7,7 +7,7 @@
 
 /*
  * Solution 1
- * 2019-11-01  Runtime: 0 ms
+ * 2019-11-02  Runtime: 0 ms
  * Algorithm: => Recursion
  * Time Complexity: ?, Space Conplexity: O(1)
  */
@@ -41,4 +41,37 @@ class Solution {
         return sumLeft;
     }
 }
- 
+
+
+/*
+ * Solution 2
+ * 2019-11-02  Runtime: 1 ms
+ * Algorithm: => Iteration
+ * Time Complexity: ?, Space Conplexity: O(1)
+ */
+
+class Solution {
+    public int sumOfLeftLeaves(TreeNode root) {
+        if (root == null) return 0;
+        int sumLeft = 0;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node.left != null) {
+                if (node.left.left == null && node.left.right == null) {
+                    sumLeft += node.left.val;
+                } else {
+                    stack.push(node.left);
+                }
+            }
+            if (node.right != null) {
+                if (node.right.left != null || node.right.right != null) {
+                    stack.push(node.right);
+                }
+            }
+        }
+        
+        return sumLeft;
+    }
+}
