@@ -216,6 +216,7 @@ class Solution {
 | 503 [Java](./Code/503_Next_Greater_Element_II.java)
 | 538 [Java](./Code/538_Convert_BST_to_Greater_Tree.java)
 | 543 [Java](./Code/543_Diameter_of_Binary_Tree.java)
+| 572 [Java](./Code/572_Subtree_of_Another_Tree.java)
 | 581 [Java](./Code/581_Shortest_Unsorted_Continuous_Subarray.java)
 | 621 [Java](./Code/621_Task_Scheduler.java)
 | 647 [Java](./Code/647_Palindromic_Substrings.java)
