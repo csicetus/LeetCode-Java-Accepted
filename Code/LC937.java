@@ -9,7 +9,7 @@
  * Solution 1
  * 2019-12-18  Runtime: 7 ms
  * Algorithm: => Rewrite compare function
- * Time Complexity: O(NlogN), N is the total content of logs.
+ * Time Complexity: O(NlogN), N is the total content of logs. Space Complexity: O(N)
  */
  
  // Rewrite compare function
