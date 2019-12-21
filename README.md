@@ -237,5 +237,6 @@ class Solution {
 | 647 [Java](./Code/647_Palindromic_Substrings.java)
 | 671 [Java](./Code/671_Second_Minimum_Node_In_a_Binary_Tree.java)
 | 739 [Java](./Code/739_Daily_Temperatures.java)
+| 819 [Java](./Code/LC819.java)
 | 852 [Java](./Code/852_Peak_Index_in_a_Mountain_Array.java)
 | 937 [Java](./Code/LC937.java)
