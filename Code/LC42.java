@@ -60,3 +60,33 @@ class Solution {
         return res;
     }
 }
+
+////////// sol 3
+class Solution {
+    // Time: O(n); Space: O(1)
+    public int trap(int[] height) {
+        int res = 0;
+        int leftMax = 0;
+        int rightMax = 0;
+        int leftP = 1;
+        int rightP = height.length - 2;
+        for (int i = 1; i < height.length - 1; i++) {          
+            if (height[leftP - 1] < height[rightP + 1]) {
+                leftMax = Math.max(leftMax, height[leftP - 1]);
+                int minLine = leftMax;
+                if (height[leftP] < minLine) {
+                    res += minLine - height[leftP];
+                }
+                leftP++;
+            } else {
+                rightMax = Math.max(rightMax, height[rightP + 1]);
+                int minLine = rightMax;
+                if (height[rightP] < minLine) {
+                    res += minLine - height[rightP];
+                }
+                rightP--;
+            }
+        }
+        return res;
+    }
+}
