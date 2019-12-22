@@ -187,7 +187,7 @@ class Solution {
 | 190 [Java](./Code/190_Reverse_Bits.java)
 | 191 [Java](./Code/191_Number_of_1_Bits.java)
 | 198 [Java](./Code/198_House_Robber.java)
-| 200 [Java](./Code/200_Number_of_Islands.java)
+| 200 [Java](./Code/LC200.java)
 | 208 [Java](./Code/208_Implement_Trie_(Prefix_Tree).java)
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
 | 213 [Java](./Code/213_House_Robber_II.java)
