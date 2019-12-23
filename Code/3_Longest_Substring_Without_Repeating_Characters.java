@@ -25,3 +25,46 @@ class Solution {
         return maxLen;
     }
 }
+
+////////// sol 2: Hash set
+
+// Time: O(n); Space: O(min(m, n)), n is the length of set
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int len = s.length();
+        if (len == 0) return 0;
+        HashSet<Character> set = new HashSet<>();
+        int res = 0, i = 0, j = 0;
+        while (i < len && j < len) {
+            if (!set.contains(s.charAt(j))) {
+                set.add(s.charAt(j));
+                j++;
+                res = Math.max(res, j - i);
+            } else {
+                set.remove(s.charAt(i));
+                i++;
+            }
+        }
+        return res;
+    }
+}
+
+
+////////// sol 3: str[]
+
+// Time: O(n); Space: O(m), m is the length of str[]
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int len = s.length();
+        if (len == 0) return 0;
+        int str[] = new int[128];
+        int res = 0, i = 0, j = 0;
+        for (; j < len; j++) {
+            i = Math.max(str[s.charAt(j)], i); 
+            // the position of i should set
+            str[s.charAt(j)] = j + 1;
+            res = Math.max(res, j + 1 - i);
+        }
+        return res;
+    }
+}
