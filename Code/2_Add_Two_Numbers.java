@@ -40,3 +40,34 @@ class Solution {
         return dummy.next;
     }
 }
+
+
+/// follow up: the linked list order reverse, calculate sum
+//////////sol 1
+
+public ListNode reverseList(ListNode head) 
+{
+    if (head == null) return null;
+   	ListNode pre = null;
+	   ListNode next;
+	   while (head != null) {
+		      next = head->next;
+		      head->next = pre;
+		      pre = head;
+		      head = next;
+	   }
+	   return pre;
+}
+
+//////////sol 2: recursion
+
+public ListNode reverseListRecursion(ListNode head) {
+        ListNode newHead;
+        if (head == null || head.next == null) {
+            return head;
+        }
+        newHead = reverseListRecursion(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+}
