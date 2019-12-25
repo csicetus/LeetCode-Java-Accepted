@@ -176,6 +176,7 @@ class Solution {
 | 138 [Java](./Code/138_Copy_List_with_Random_Pointer.java)
 | 139 [Java](./Code/139_Word_Break.java)
 | 141 [Java](./Code/141_Linked_List_Cycle.java)
+| 146 [Java](./Code/LC146.java)
 | 148 [Java](./Code/148_Sort_List.java)
 | 152 [Java](./Code/152_Maximum_Product_Subarray.java)
 | 155 [Java](./Code/155_Min_Stack.java)
