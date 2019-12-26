@@ -35,3 +35,78 @@ class Solution {
 
 
 ////////// sol 2: bfs
+
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new LinkedList<>();
+        if (root == null) return res;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        int level = 0;
+        while (!q.isEmpty()) {
+            int levelSize = q.size();        
+            List<Integer> temp = new LinkedList<>();          
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode cur = q.poll();
+                if (cur != null) {
+                    // 0, 2, 4, 2n lines
+                    if (level % 2 == 0) {
+                        temp.add(cur.val);
+                    // 1, 3, 5, 2n + 1 lines
+                    } else {
+                        temp.add(0, cur.val);
+                    }
+                    q.offer(cur.left);
+                    q.offer(cur.right);
+                } 
+            }
+            if (temp.size() > 0) {
+                res.add(temp);
+            }
+            level++;
+        }
+        return res;
+    }
+}
+
+
+////////// sol 3: stack
+
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new LinkedList<>();
+        if (root == null) return res;
+        Stack<TreeNode> s1 = new Stack<>();
+        Stack<TreeNode> s2 = new Stack<>();
+        s1.add(root);
+        while (!s1.isEmpty() || !s2.isEmpty()) {
+            List<Integer> temp = new ArrayList<>();          
+            while (!s1.isEmpty()) {
+                TreeNode cur = s1.pop();
+                temp.add(cur.val);
+                if (cur.left != null) {
+                    s2.add(cur.left);
+                } 
+                if (cur.right != null) {
+                    s2.add(cur.right);
+                }
+            }
+            res.add(temp);
+            temp = new ArrayList<>();
+            while (!s2.isEmpty()) {
+                TreeNode cur = s2.pop(); 
+                temp.add(cur.val);
+                if (cur.right != null) {
+                    s1.add(cur.right);
+                }
+                if (cur.left != null) {
+                    s1.add(cur.left);
+                } 
+            }
+            if (temp.size() > 0) {
+                res.add(temp);
+            }
+        }
+        return res;
+    }
+}
