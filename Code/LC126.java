@@ -84,3 +84,80 @@ class Solution {
         return res;
     }
 }
+
+
+///////// sol 2: BFS
+
+class Solution {
+    public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+        List<List<String>> res = new ArrayList<>();
+        // if endWord didn't exist in wordList, return null
+        if (!wordList.contains(endWord)) {
+            return res;
+        }
+        // use bfs() to find all neighbors and corresbonding path
+        bfs(beginWord, endWord, wordList, res);
+        return res;
+    }
+    
+    private void bfs(String beginWord, String endWord, List<String> wordList, List<List<String>> res) {
+        Queue<List<String>> q = new LinkedList<>();
+        List<String> path = new ArrayList<>();
+        path.add(beginWord);
+        q.offer(path);
+        Set<String> dict = new HashSet<>(wordList);
+        Set<String> visited = new HashSet<>();
+        visited.add(beginWord);
+        boolean isFound = false;
+        Set<String> list = new HashSet<>(wordList);
+        while (!q.isEmpty()) {
+            int size = q.size();
+            Set<String> subVisited = new HashSet<>();
+            for (int i = 0; i < size; i++) {
+                List<String> curPath = q.poll();
+                String temp = curPath.get(curPath.size() - 1);
+                // get all of neighbors
+                List<String> neighbors = getNeighborNode(temp, list);
+                // test neighbors one by one
+                for (String neighbor : neighbors) {
+                    // if it's new word, add to map
+                    if (!visited.contains(neighbor)) {
+                        // arrive endWord
+                        if (neighbor.equals(endWord)) {
+                            isFound = true;
+                            curPath.add(neighbor);
+                            res.add(new ArrayList<String>(curPath));
+                            curPath.remove(curPath.size() - 1);
+                        }
+                        // add cur word
+                        curPath.add(neighbor);
+                        q.offer(new ArrayList<String>(curPath));
+                        curPath.remove(curPath.size() - 1);
+                        subVisited.add(neighbor);
+                    }
+                }
+            }
+            visited.addAll(subVisited);
+            if (isFound) {
+                break;
+            }
+        }
+    }
+    
+    private List<String> getNeighborNode(String node, Set<String> dict) {
+        List<String> res = new ArrayList<>();
+        char ch[] = node.toCharArray();
+        for (char c = 'a'; c <= 'z'; c++) {
+            for (int i = 0; i < ch.length; i++) {
+                if (c == ch[i]) continue;
+                char oldch = ch[i];
+                ch[i] = c;
+                if (dict.contains(String.valueOf(ch))) {
+                    res.add(String.valueOf(ch));
+                }              
+                ch[i] = oldch;
+            }
+        }
+        return res;
+    }
+}
