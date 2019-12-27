@@ -171,6 +171,8 @@ class Solution {
 | 120 Java
 | 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
 | 125 [Java](./Code/125_Valid_Palindrome.java)
+| 126 [Java](./Code/LC126.java)
+| 127 [Java](./Code/LC127.java)
 | 131 [Java](./Code/131_Palindrome_Partitioning.java)
 | 136 [Java](./Code/136_Single_Number.java)
 | 138 [Java](./Code/138_Copy_List_with_Random_Pointer.java)
