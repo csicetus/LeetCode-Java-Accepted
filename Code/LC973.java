@@ -63,3 +63,19 @@ class Solution {
         //return p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1];
     }
 }
+
+
+/////////// sol 3
+
+// Time: O(nlogn); Space: O(logK)
+class Solution {
+    public int[][] kClosest(int[][] points, int K) {
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparing(p -> -p[0] * p[0] - p[1] * p[1]));
+        for (int[] p : points) {
+            pq.offer(p);
+            // poll the last one(K + 1)
+            if (pq.size() > K) pq.poll();
+        }
+        return pq.toArray(new int[K][2]);
+    }
+}
