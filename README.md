@@ -90,7 +90,7 @@ class Solution {
 | 039 [Java](./Code/39_Combination_Sum.java)
 | 040 [Java](./Code/40_Combination_Sum_II.java)
 | 041 Java
-| 042 [Java](./Code/LC42.java)
+| 042 [Java](./Code/LC042.java)
 | 043 [Java](./Code/43_Multiply_Strings.java)
 | 044 Java
 | 045 Java
