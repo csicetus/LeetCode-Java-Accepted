@@ -246,5 +246,6 @@ class Solution {
 | 819 [Java](./Code/LC819.java)
 | 852 [Java](./Code/852_Peak_Index_in_a_Mountain_Array.java)
 | 937 [Java](./Code/LC937.java)
+| 957 [Java](./Code/LC957.java)
 | 973 [Java](./Code/LC973.java)
 | 994 [Java](./Code/LC994.java)
