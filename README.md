@@ -248,4 +248,5 @@ class Solution {
 | 937 [Java](./Code/LC937.java)
 | 957 [Java](./Code/LC957.java)
 | 973 [Java](./Code/LC973.java)
+| 977 [Java](./Code/LC977.java)
 | 994 [Java](./Code/LC994.java)
