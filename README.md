@@ -111,7 +111,7 @@ class Solution {
 | 060 [Java](./Code/60_Permutation_Sequence.java)
 | 061 [Java](./Code/61_Rotate_List.java)
 | 062 [Java](./Code/62_Unique_Paths.java)
-| 063 [Java](./Code/LC63.java)
+| 063 [Java](./Code/LC063.java)
 | 064 [Java](./Code/64_Minimum_Path_Sum.java)
 | 065 Java
 | 066 [Java](./Code/66_Plus_One.java)
