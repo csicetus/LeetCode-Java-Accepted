@@ -138,7 +138,7 @@ class Solution {
 | 087 Java
 | 088 [Java](./Code/88_Merge_Sorted_Array.java)
 | 089 Java
-| 090 Java
+| 090 [Java](./Code/LC090.java)
 | 091 [Java](./Code/91_Decode_Ways.java)
 | 092 Java
 | 093 Java
