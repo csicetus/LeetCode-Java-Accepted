@@ -121,7 +121,7 @@ class Solution {
 | 070 [Java](./Code/70_Climbing_Stairs.java)
 | 071 Java
 | 072 Java
-| 073 Java
+| 073 [Java](./Code/LC073.java)
 | 074 [Java](./Code/74_Search_a_2D_Matrix.java)
 | 075 [Java](./Code/75_Sort_Colors.java)
 | 076 Java
