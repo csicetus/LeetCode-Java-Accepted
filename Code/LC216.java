@@ -1,5 +1,3 @@
-/////////// sol 1: backtrack
-
 // Time: O(n*2^n)?; Space: O(2^n)?
 class Solution {
     public List<List<Integer>> combinationSum3(int k, int n) {
@@ -16,6 +14,10 @@ class Solution {
         for (int i = start; i <= 9 && i <= n; i++) {
             tempList.add(i);
             backtrack(k, n - i, tempList, res, i + 1);
+            // for (int t : tempList) {
+            //     System.out.println(t);
+            // }
+            // System.out.println("------------");
             tempList.remove(tempList.size() - 1);
         }
     }
