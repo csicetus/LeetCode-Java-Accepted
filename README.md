@@ -201,6 +201,7 @@ class Solution {
 | 215 [Java](./Code/215_Kth_Largest_Element_in_an_Array.java)
 | 216 [Java](./Code/LC216.java)
 | 221 [Java](./Code/221_Maximal_Square.java)
+| 228 [Java](./Code/LC228.java)
 | 230 [Java](./Code/230_Kth_Smallest_Element_in_a_BST.java)
 | 236 [Java](./Code/236_Lowest_Common_Ancestor_of_a_Binary_Tree.java)
 | 238 [Java](./Code/238_Product_of_Array_Except_Self.java)
