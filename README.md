@@ -247,6 +247,7 @@ class Solution {
 | 496 [Java](./Code/496_Next_Greater_Element_I.java)
 | 503 [Java](./Code/503_Next_Greater_Element_II.java)
 | 509 [Java](./Code/LC509.java)
+| 513 [Java](./Code/LC513.java)
 | 538 [Java](./Code/538_Convert_BST_to_Greater_Tree.java)
 | 543 [Java](./Code/543_Diameter_of_Binary_Tree.java)
 | 572 [Java](./Code/572_Subtree_of_Another_Tree.java)
