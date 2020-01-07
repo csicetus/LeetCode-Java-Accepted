@@ -173,6 +173,7 @@ class Solution {
 | 125 [Java](./Code/125_Valid_Palindrome.java)
 | 126 [Java](./Code/LC126.java)
 | 127 [Java](./Code/LC127.java)
+| 129 [Java](./Code/LC129.java)
 | 131 [Java](./Code/131_Palindrome_Partitioning.java)
 | 136 [Java](./Code/136_Single_Number.java)
 | 138 [Java](./Code/138_Copy_List_with_Random_Pointer.java)
