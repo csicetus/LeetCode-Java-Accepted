@@ -243,6 +243,7 @@ class Solution {
 | 442 [Java](./Code/LC442.java)
 | 448 [Java](./Code/448_Find_All_Numbers_Disappeared_in_an_Array.java)
 | 454 [Java](./Code/454_4Sum_II.java)
+| 456 [Java](./Code/LC456.java)
 | 457 [Java](./Code/LC457.java)
 | 491 [Java](./Code/LC491.java)
 | 494 [Java](./Code/494_Target_Sum.java)
