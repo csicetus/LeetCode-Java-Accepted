@@ -53,3 +53,8 @@ class Solution {
         }
     }
 }
+
+
+//////////// follow up: if board is infinite large
+
+// whole board is stored in a file, each time we need to check 8 cells around current cell, so we should get 3 rows of file to main memory.
