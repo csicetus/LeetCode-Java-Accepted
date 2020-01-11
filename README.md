@@ -164,7 +164,7 @@ class Solution {
 | 113 [Java](./Code/113_Path_Sum_II.java)
 | 114 [Java](./Code/114_Flatten_Binary_Tree_to_Linked_List.java)
 | 115 Java
-| 116 Java
+| 116 [Java](./Code/LC116.java)
 | 117 Java
 | 118 Java
 | 119 Java
