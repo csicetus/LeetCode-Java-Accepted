@@ -175,6 +175,7 @@ class Solution {
 | 127 [Java](./Code/LC127.java)
 | 129 [Java](./Code/LC129.java)
 | 131 [Java](./Code/131_Palindrome_Partitioning.java)
+| 134 [Java](./Code/LC134.java)
 | 136 [Java](./Code/136_Single_Number.java)
 | 138 [Java](./Code/138_Copy_List_with_Random_Pointer.java)
 | 139 [Java](./Code/139_Word_Break.java)
