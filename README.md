@@ -157,7 +157,7 @@ class Solution {
 | 106 Java
 | 107 Java
 | 108 [Java](./Code/108_Convert_Sorted_Array_to_Binary_Search_Tree.java)
-| 109 Java
+| 109 [Java](./Code/LC109.java)
 | 110 [Java](./Code/110_Balanced_Binary_Tree.java)
 | 111 [Java](./Code/111_Minimum_Depth_of_Binary_Tree.java)
 | 112 [Java](./Code/112_Path_Sum.java)
