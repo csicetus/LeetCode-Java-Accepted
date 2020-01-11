@@ -274,4 +274,5 @@ class Solution {
 | 973 [Java](./Code/LC973.java)
 | 977 [Java](./Code/LC977.java)
 | 994 [Java](./Code/LC994.java)
+| 997 [Java](./Code/LC997.java)
 | 1091 [Java](./Code/LC1091.java)
