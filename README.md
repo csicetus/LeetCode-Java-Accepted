@@ -198,6 +198,7 @@ class Solution {
 | 198 [Java](./Code/198_House_Robber.java)
 | 199 [Java](./Code/LC199.java)
 | 200 [Java](./Code/LC200.java)
+| 206 [Java](./Code/LC206.java)
 | 207 [Java](./Code/LC207.java)
 | 208 [Java](/Code/208_Implement_Trie_(Prefix_Tree).java)
 | 209 [Java](./Code/209_Minimum_Size_Subarray_Sum.java)
