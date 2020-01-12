@@ -170,6 +170,7 @@ class Solution {
 | 119 Java
 | 120 [Java](./Code/LC120.java)
 | 121 [Java](./Code/121_Best_Time_to_Buy_and_Sell_Stock.java)
+| 124 [Java](./Code/LC124.java)
 | 125 [Java](./Code/125_Valid_Palindrome.java)
 | 126 [Java](./Code/LC126.java)
 | 127 [Java](./Code/LC127.java)
