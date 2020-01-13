@@ -249,6 +249,7 @@ class Solution {
 | 454 [Java](./Code/454_4Sum_II.java)
 | 456 [Java](./Code/LC456.java)
 | 457 [Java](./Code/LC457.java)
+| 472 [Java](./Code/LC472.java)
 | 491 [Java](./Code/LC491.java)
 | 494 [Java](./Code/494_Target_Sum.java)
 | 495 [Java](./Code/LC495.java)
