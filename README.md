@@ -218,6 +218,7 @@ class Solution {
 | 287 [Java](./Code/287_Find_the_Duplicate_Number.java)
 | 288 [Java](./Code/LC288.java)
 | 289 [Java](./Code/LC289.java)
+| 295 [Java](./Code/LC295.java)
 | 300 [Java](./Code/300_Longest_Increasing_Subsequence.java)
 | 309 [Java](./Code/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.java)
 | 322 [Java](./Code/322_Coin_Change.java)
