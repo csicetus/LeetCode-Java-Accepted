@@ -47,7 +47,7 @@ class Solution {
 * [Top Interview Questions](./Top100.md)
 * [Question classification and idea](./QuestionClassification)
 
-### LeetCode Problems & Solutions
+### LeetCode Problems & Solutions(1-999)
 
 001 [Java](./Code/1_Two_Sum.java)
 | 002 [Java](./Code/2_Add_Two_Numbers.java)
@@ -251,6 +251,7 @@ class Solution {
 | 454 [Java](./Code/454_4Sum_II.java)
 | 456 [Java](./Code/LC456.java)
 | 457 [Java](./Code/LC457.java)
+| 460 [Java](./Code/LC460.java)
 | 472 [Java](./Code/LC472.java)
 | 491 [Java](./Code/LC491.java)
 | 494 [Java](./Code/494_Target_Sum.java)
@@ -281,6 +282,9 @@ class Solution {
 | 977 [Java](./Code/LC977.java)
 | 994 [Java](./Code/LC994.java)
 | 997 [Java](./Code/LC997.java)
-| 1000 [Java](./Code/LC1000.java)
+
+### LeetCode Problems & Solutions(1-999)
+
+1000 [Java](./Code/LC1000.java)
 | 1046 [Java](./Code/LC1046.java)
 | 1091 [Java](./Code/LC1091.java)
