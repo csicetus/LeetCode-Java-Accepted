@@ -228,6 +228,7 @@ class Solution {
 | 337 [Java](./Code/337_House_Robber_III.java)
 | 338 [Java](./Code/338_Counting_Bits.java)
 | 341 [Java](./Code/LC341.java)
+| 343 [Java](./Code/LC343.java)
 | 344 [Java](./Code/344_Reverse_String.java)
 | 347 [Java](./Code/347_Top_K_Frequent_Elements.java)
 | 349 [Java](./Code/349_Intersection_of_Two_Arrays.java)
