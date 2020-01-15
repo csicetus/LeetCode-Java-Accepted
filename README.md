@@ -283,8 +283,9 @@ class Solution {
 | 994 [Java](./Code/LC994.java)
 | 997 [Java](./Code/LC997.java)
 
-### LeetCode Problems & Solutions(1-999)
+### LeetCode Problems & Solutions(1000-)
 
 1000 [Java](./Code/LC1000.java)
 | 1046 [Java](./Code/LC1046.java)
 | 1091 [Java](./Code/LC1091.java)
+| 1314 [Java](./Code/LC1314.java)
