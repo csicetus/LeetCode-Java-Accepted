@@ -194,6 +194,7 @@ class Solution {
 | 167 [Java](./Code/167_Two_Sum_II_Input_array_is_sorted.java)
 | 171 [Java](./Code/171_Excel_Sheet_Column_Number.java)
 | 172 [Java](./Code/172_Factorial_Trailing_Zeroes.java)
+| 188 [Java](./Code/LC188.java)
 | 189 [Java](./Code/189_Rotate_Array.java)
 | 190 [Java](./Code/190_Reverse_Bits.java)
 | 191 [Java](./Code/191_Number_of_1_Bits.java)
