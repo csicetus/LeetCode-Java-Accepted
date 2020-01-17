@@ -279,6 +279,7 @@ class Solution {
 | 692 [Java](./Code/LC692.java)
 | 701 [Java](./Code/LC701.java)
 | 714 [Java](./Code/LC714.java)
+| 718 [Java](./Code/LC718.java)
 | 739 [Java](./Code/739_Daily_Temperatures.java)
 | 819 [Java](./Code/LC819.java)
 | 852 [Java](./Code/852_Peak_Index_in_a_Mountain_Array.java)
