@@ -258,6 +258,7 @@ class Solution {
 | 460 [Java](./Code/LC460.java)
 | 464 [Java](./Code/LC464.java)
 | 472 [Java](./Code/LC472.java)
+| 486 [Java](./Code/LC486.java)
 | 491 [Java](./Code/LC491.java)
 | 494 [Java](./Code/494_Target_Sum.java)
 | 495 [Java](./Code/LC495.java)
