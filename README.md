@@ -296,4 +296,6 @@ class Solution {
 1000 [Java](./Code/LC1000.java)
 | 1046 [Java](./Code/LC1046.java)
 | 1091 [Java](./Code/LC1091.java)
+| 1143 [Java](./Code/LC1143.java)
 | 1314 [Java](./Code/LC1314.java)
+
