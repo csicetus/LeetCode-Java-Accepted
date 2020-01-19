@@ -278,6 +278,7 @@ class Solution {
 | 671 [Java](./Code/671_Second_Minimum_Node_In_a_Binary_Tree.java)
 | 692 [Java](./Code/LC692.java)
 | 701 [Java](./Code/LC701.java)
+| 706 [Java](./Code/LC706.java)
 | 714 [Java](./Code/LC714.java)
 | 718 [Java](./Code/LC718.java)
 | 739 [Java](./Code/739_Daily_Temperatures.java)
