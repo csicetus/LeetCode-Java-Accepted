@@ -241,6 +241,7 @@ class Solution {
 | 374 [Java](./Code/374_Guess_Number_Higher_or_Lower.java)
 | 378 [Java](./Code/378_Kth_Smallest_Element_in_a_Sorted_Matrix.java)
 | 380 [Java](./Code/LC380.java)
+| 383 [Java](./Code/LC383.java)
 | 387 [Java](./Code/387_First_Unique_Character_in_a_String.java)
 | 388 [Java](./Code/LC388.java)
 | 394 [Java](./Code/394_Decode_String.java)
