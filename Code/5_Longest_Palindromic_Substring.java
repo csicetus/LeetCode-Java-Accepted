@@ -7,7 +7,7 @@
 
 /*
  * Solution 1
- * 2019-06-03  Runtime: 61 ms
+ * 2019-06-03 
   * Algorithm: Use one-dimensional(optimized by two-dimensional) to find Longest Common Substring. 
  *            The end position of Longest Common Substring of reverse string should corresponding to the orginal position.
  * Time complexity: O(n^2); space complexity: reduced to O(n)(two-dimensional space complexity is O(n^2)).
